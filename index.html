@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og:http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!--Tags for rendering correct website thumbnail-->
+    <meta property="og:title" content="Apstraction ICT"/>
+    <meta property="og:type" content="image/png"/>
+    <meta property="og:url" content="http://apstraction.nl/images/headlogo2.png"/>
+    <meta property="og:image" content="http://apstraction.nl/images/headlogo2.png"/>
+
+
+    <title>Apstraction</title>
+
+
+    <!--Internationalization links-->
+    <link rel="localization" hreflang="nl" href="lang/nl.json" type="application/vnd.oftn.l10n+json"/>
+    <script type="text/javascript" src="js/i18n.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <!--These are our Google fonts and Font-Awesome -->
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="images/favicon.png" rel="icon" type="image/png"/>
+</head>
+
+<body onload="loaded()" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand " id="bartitle" href="#home">
+                <img src="images/headlogo_blank.png" style="height:40px;width:41px;"/></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="introduction" href="#who">INTRODUCTION</a></li>
+                <li><a id="portfolio_" href="#portfolio">PORTFOLIO</a></li>
+                <li><a id="vaardigheden" href="#skills">SKILLS</a></li>
+                <li><a id="contact" href="#get-involved">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="home" class="jumbotron ">
+    <div class="container">
+
+        <div class="row">
+            <div class="xs-hidden col-sm-8 ">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <img src="images/headlogo2.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container homepage">
+    <div class="row" id="who">
+        <p style="padding:20px"></p>
+
+        <h2 id="introduction_">Introduction</h2>
+        <hr>
+        <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"><p id="introtekst">I offer application development for Android mobile devices stemming from firm experience in Java, Html and graphics. Front end experience with Java ,HTML5, Bootstrap. Backend experience with Spring-Boot, Mongo DB, MySQL and App Engine. I describe myself as an allrounder who feels equally at home working on graphics and mockups or at the other hand streamlining https nodes or making database queries. Keywords compliancy, creativity and perserverance.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container homepage">
+
+    <div class="row" id="portfolio">
+        <h2>Portfolio</h2>
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6" id="_example0">
+                <h3>Impatient</h3>
+
+                <p ><img id="modal_impatient"
+                        src="images/titleimg_impatient.png"/></p>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6" id="_example1">
+                <h3>Tafeltrainer</h3>
+
+                <p><a onclick="return modal_taf_loaded();" href="#openModal"><img
+                        src="images/titleimg_tafeltrainer.png"/></a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6" id="_example2">
+                <h3>Gouda City Walks</h3>
+
+                <p><a onclick="return modal_gou_loaded();" href="#openModal_gouda"><img
+                        src="images/titleimg_gouda.png"/></a></p>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6" id="_example3">
+                <h3>Groupmaker</h3>
+
+                <p><a onclick="return modal_gro_loaded();" href="#openModal_group"><img
+                        src="images/titleimg_groupmaker.png"/></a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6" id="_example4">
+                <h3>Android Animations</h3>
+
+                <p><a href="#openModal_selfie"><img src="images/titleimg_anim.png"/></a></p>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6" id="_example5">
+                <h3>Ideas in Progress</h3>
+
+                <p><a href="#openModal_ideas" onclick="return modal_ide_loaded()"><img src="images/titleimg_ideas.png"/></a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <div id="example1"><h3>Tafeltrainer</h3>
+
+                <div class="row row-content">
+                    <div class="col-xs-12">
+                        <div id="mycarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active ">
+                                    <img class="img-responsive" src="images/device-2015-03-25-125507.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_tafeltrainer1">Tafeltrainer is an educational web application where children can practise the times tables. At the same time Teachers and Parents are being held informed about the pupils progress. The app can be visited at</p><a
+                                            href="http://ikbenslimmer.nl/"
+                                            target="_blank">www.ikbenslimmer.nl</a>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/device-2015-03-25-screen2.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text ">
+                                        <p id="modal_tafeltrainer2">The app strives to motivate children to practise by a system with virtual money and goods they can buy in a little shop. Money can be earned by practising.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/device-2015-03-25-125652.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_tafeltrainer3">In the shop all kinds of products can be bought like animals, funny pictures, football players and so on. But when all the money is spent the child has to go to practise again!</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/device-2015-03-25-125834.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_tafeltrainer4">The child has access to a personal wallet and a results page.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/device-2015-03-25-screen4.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_tafeltrainer5">The app distinguishes two types of motivation: money and achievement. The latter category can earn prizes, while the money motivated pupils will go for the items in the shop.</p>
+                                    </div>
+                                </div>
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/device-2015-03-25-125958.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_tafeltrainer6">For parents and teachers detailed insights are available by visiting the administration console. Since teachers face large time constraints they can be supplied with result lists by email.</p>
+                                        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                                            <p style="padding:10px;"></p>
+                                            <a style="" href="https://github.com/githubapreinders/tafeltrainer3"
+                                               target="_blank">
+                                                <i class="fa fa-github-square fa-4x"></i>
+                                                source code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#mycarousel1" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left text-grey" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#mycarousel1" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right text-grey" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="openModal_gouda" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <div id="example2"><h3>Gouda City Walks</h3>
+
+                <div class="row row-content">
+                    <div class="col-xs-12">
+                        <div id="mycarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active ">
+                                    <img class="img-responsive" src="images/mapper_screenshot1.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                    <div class="col-xs-12 carousel-caption img-rounded carousel_text">
+                                        <p id="modal_gouda1">An app to navigate through the ancient center of Gouda Netherlands. It will keep track of the location of the user, at the same time displaying a suggested route, displaying pictures and information about interesting features.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/mapper_screenshot2.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text ">
+                                        <p id="modal_gouda2">The app is basically displaying a map with some helpful features laid over it. People are on their way so this app is kept as simple as possible so that it can be used without studying all of its workings.</p>
+                                    </div>
+                                </div>
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/mapper_screenshot3.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_gouda3">Overlays with text and pictures are shown and their visibility can be toggled on or off with the buttons. The arrow buttons control which marker on the route is active. Currently translations in Dutch, English and Spanish.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+
+
+                                    <p style="padding:10px;"></p>
+                                    <a href="https://play.google.com/store/apps/details?id=afr.iterson.mapper"
+                                       target="_blank">
+                                        <img class="img-responsive" src="images/mapper_screenshot4.png"
+                                             style="margin-left:auto; margin-right:auto;"/>
+                                    </a>
+
+                                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                                        <a href="https://github.com/githubapreinders/mapper"
+                                           target="_blank">
+                                            <i class="fa fa-github-square fa-4x"></i>
+                                            source code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="left carousel-control" href="#mycarousel2" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left text-grey" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#mycarousel2" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right text-grey" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="openModal_impatient" class="modalDialog" role="dialog">
+
+        <div id="example0"><h3>Impatient</h3>
+            <a id="modal_impatient_close" href="#close" title="Close" class="close">X</a>
+
+            <div class="row row-content">
+                <div class="col-xs-12">
+                    <div id="mycarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                        <div class="carousel-inner " role="listbox">
+                            <div class="item active ">
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-10">
+                                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0;
+                                        overflow: hidden; max-width: 100%; } .embed-container iframe,
+                                        .embed-container object, .embed-container embed { position: absolute; top:
+                                        0; left: 0; width: 100%; height: 100%; }
+                                    </style>
+                                    <div class='embed-container'>
+                                        <iframe src='https://www.youtube.com/embed/u9fjKquGGzI' frameborder='0'
+                                                allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                <div class="col-xs-12 carousel-caption img-rounded carousel_text">
+                                    <p id="modal_impatient1">An Android Application that helps a radiology treatment center to regulate the queue of waiting patients. The app optimizes the occupation rate for the machines at the same time trying to minimize the burden of long waiting times.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-xs-1"></div>
+                                <div class="  col-xs-10">
+                                    <object data="images/impatient_original_design.pdf" type="application/pdf"
+                                            width="100%" height="400px">
+                                        <embed src=" images/impatient_original_design.pdf" type="application/pdf">
+                                            &nbsp; </embed>
+                                        alt :<a href="images/impatient_original_design.pdf"/>
+                                    </object>
+                                </div>
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-12">
+                                    <p style="padding:10px;"></p>
+                                </div>
+                            </div>
+
+
+                            <div class="item ">
+                                <img class="img-responsive" src="images/impatient_screen1.png"
+                                     style="margin-left:auto; margin-right:auto;"/>
+
+                                <p style="padding:10px;"></p>
+
+                                <div class="carousel-caption img-rounded carousel_text">
+                                    <p id="modal_impatient2">The application consists of three parts: The first part is an app that patients use to enter or leave in the queue of people that are waiting for treatment.An estimate of the expected waiting time will be displayed. The patient will get notifications when it is her turn or when it is appointment day.</p>
+                                </div>
+                            </div>
+
+                            <div class="item ">
+                                <img class="img-responsive" src="images/impatient_screen2.png"
+                                     style="margin-left:auto; margin-right:auto;"/>
+
+                                <p style="padding:10px;"></p>
+
+                                <div class="carousel-caption img-rounded carousel_text">
+                                    <p id="modal_impatient3">The second part is an app that administrators in the hospitals use. They will see the queue of waiting people and they can manipulate this queue, according to the situation at that moment. They have access to the general patient list and can make appointments. The amount of treatment machines and the average treatment time can be changed in a special settings screen.</p>
+                                </div>
+                            </div>
+
+                            <div class="item ">
+                                <p style="padding:10px;"></p>
+
+                                <p style="padding:10px;"></p>
+
+                                <p style="padding:10px;"></p>
+
+                                <p style="padding:10px;"></p>
+
+                                <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                                    <a style="" href="https://github.com/githubapreinders/impatient_clients_servlet"
+                                       target="_blank">
+                                        <i class="fa fa-github-square fa-4x"></i>
+                                        source code
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                <div class="col-xs-12 carousel-caption img-rounded carousel_text">
+                                    <p id="modal_impatient4">The third part of the application connects patient and admin app; it maintains security, it structures the waiting queue, notifies admins when a patient has logged in, notifies patients about their waiting times, keeps track of appointments, etc. This part resides on a server in the cloud.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#mycarousel3" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left text-grey" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#mycarousel3" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right text-grey" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="openModal_group" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <div id="example3"><h3>Groupmaker</h3>
+
+                <div class="row row-content">
+                    <div class="col-xs-12">
+                        <div id="mycarousel4" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active ">
+                                    <img class="img-responsive" src="images/groepsmaker_screen1.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_group1">Groupmaker is an application for teachers. In modern teaching practice classes very often have to be split up in order to complete an assignment. The learning experience is enhanced through the cooperation process. However class management is more difficult.The group can easily be split up in duos, triplets or how many groups there are needed.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/groepsmaker_screen2.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text ">
+                                        <p id="modal_group2">Very often the teacher wants to place people together, or apart from eachother. In the app the red colors will be placed in different groups, the green colors in the same subgroup. The app will make a division based on the given conditions.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item ">
+                                    <img class="img-responsive" src="images/groepsmaker_screen3.png"
+                                         style="margin-left:auto; margin-right:auto;"/>
+
+                                    <p style="padding:10px;"></p>
+
+                                    <div class="carousel-caption img-rounded carousel_text">
+                                        <p id="modal_group3">Sometimes a group leader wants to have people distributed evenly. Like for example all the girls in a certain group. Results can be transmitted to the digital whiteboard, or to collegues via sms or email;</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                                        <a style="" href="https://github.com/githubapreinders/groepsmaker1"
+                                           target="_blank">
+                                            <i class="fa fa-github-square fa-4x"></i>
+                                            source code
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <a class="left carousel-control" href="#mycarousel4" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left text-grey" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#mycarousel4" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right text-grey" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal_selfie" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <div id="example4"><h3>Android animations</h3>
+
+                <p style="padding: 20px;"></p>
+                 <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-cogs fa-stack-1x"></i>
+        </span>
+
+                <p>Coming soon, work in progress...
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal_ideas" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <div id="example5"><h3>Impatient</h3>
+
+                <div class="row row-content">
+                    <div class="col-xs-12">
+                        <div id="mycarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                            <div class="carousel-inner " role="listbox">
+                                <div class="item active ">
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-10">
+                                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0;
+                                            overflow: hidden; max-width: 100%; } .embed-container iframe,
+                                            .embed-container object, .embed-container embed { position: absolute; top:
+                                            0; left: 0; width: 100%; height: 100%; }
+                                        </style>
+                                        <div class='embed-container'>
+                                            <iframe src='https://www.youtube.com/embed//RH45TB486SQ' frameborder='0'
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                    <div class="col-xs-12 carousel-caption img-rounded carousel_text">
+                                        <p id="modal_ideas1">An Android Application that promotes the museum of Modern Art, letting the user play with Broadway Boogie Woogie style elements, making use of Androids animation api. The app is an assignment of <a href="https://www.coursera.org/specializations/mobile-cloud-computing" target="_blank">an online Mooc</a> The app needs to be expanded with more ways to make a nice painting, like rotating and enlarging images, or letting it behave like a screensaver.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item  ">
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-10">
+                                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0;
+                                            overflow: hidden; max-width: 100%; } .embed-container iframe,
+                                            .embed-container object, .embed-container embed { position: absolute; top:
+                                            0; left: 0; width: 100%; height: 100%; }
+                                        </style>
+                                        <div class='embed-container'>
+                                            <iframe src='https://www.youtube.com/embed//mSlTqEeeuq4' frameborder='0'
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                    <div class="col-xs-12 carousel-caption img-rounded carousel_text">
+                                        <p id="modal_ideas2">The weather is surely in the top 5 of human interests. This app fetches weather data from the OpenWeather api and displays them in a nice way. The idea is to have several 'weathers' displayed in a personalized way. Like for example a mother who wants to know the weather in the home towns of her children.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item  ">
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-10">
+                                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0;
+                                            overflow: hidden; max-width: 100%; } .embed-container iframe,
+                                            .embed-container object, .embed-container embed { position: absolute; top:
+                                            0; left: 0; width: 100%; height: 100%; }
+                                        </style>
+                                        <div class='embed-container'>
+                                            <iframe src='https://www.youtube.com/embed//SeNwcPDHFqs' frameborder='0'
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-12"><p style="padding:10px;"></p></div>
+                                    <div class="col-xs-12 carousel-caption img-rounded carousel_text">
+                                        <p id="modal_ideas3">This app lets people take a daily selfie and stores it on the local system. A logical expansion here is to store the selfies in the cloud, so that the user keeps his collection when he changes his device. On the user side a search function would be necessary and some nice opportunities to edit selfies, add comments and sharing opportunities.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#mycarousel5" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left text-grey" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#mycarousel5" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right text-grey" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container homepage">
+            <h2 id="vaardigheden2">Skills</h2>
+            <hr>
+            <div id="progressDev">
+
+                <p>Android Framework</p>
+                <progress value="100" max='100'></progress>
+
+                <p>Java</p>
+                <progress value="100" max='100'></progress>
+
+                <p>Gwt</p>
+                <progress value="100" max='100'></progress>
+
+                <p>MySQL</p>
+                <progress value="100" max='100'></progress>
+
+                <p>Spring-Boot</p>
+                <progress value="100" max='100'></progress>
+
+                <p>HTML5</p>
+                <progress value="100" max='100'></progress>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container homepage">
+    <div class="col-sm-12">
+        <h2 id="wieisapstraction" class="media-heading">Who is Apstraction?</h2>
+        <hr>
+        <h4>Ap Reinders</h4>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-2  ">
+        <img class="img-responsive img-thumbnail img-circle" src="images/ap4a.png"/>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+        <p id="aboutme" style="text-align:left;">Coming from a background in arts and education I find making software an art and a craft. I have a weakness for old computer games like Discworld, Zelda and Psychonauts. Currently busy with courses on Angular Js and Algorithms, and looking for other opportunities to expand my skills. I live in Gouda Netherlands together with a beautiful wife, two cats and a dachshund.</p>
+    </div>
+</div>
+
+</div>
+
+</body>
+
+</div>
+
+
+<div id="get-involved">
+    <div class="container homepage">
+        <h2>Contact</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-phone fa-stack-1x"></i>
+      </span>
+
+                <p>
+                    Call today on +31621939356</p>
+            </div>
+            <div class="col-md-4">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span>
+
+                <p><a href="mailto:apstractionict@gmail.com">Email</a> for more information!</p>
+
+            </div>
+            <div class="col-md-4">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x"></i>
+        </span>
+
+                <p>Find me on <a href="https://www.linkedin.com/pub/ap-reinders/95/aa3/332"
+                                 target="_blank">LinkedIn</a></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+
+</div>
+<footer>
+    <div id="back-to-top">
+        <a href="#home"><i class="fa fa-arrow-up fa-4x"
+                           style="margin-right: 100px;margin-bottom: -5px;"></i></a>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+    $('#modal_impatient').click(function () {
+    window.location.href = "#openModal_impatient";
+    });
+});
+</script>
+
+
+
+
+
+<script>
+
+    $(document).ready(function(){
+        $("#modal_impatient_close").click(function(){
+            $("#openModal_impatient").modal("hide");
+        });
+
+    });
+
+
+</script>
+
+
+</body>
+
+</html>
