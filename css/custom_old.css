@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Special Elite";
     src: url(../fonts/special_elite/SpecialElite.ttf);
@@ -8,14 +9,14 @@ body {
     padding-top: 50px;
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #FAFAFA, #E8E8E8, #d9d9d9);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
     /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
 }
 
 ul.nav {
@@ -28,13 +29,7 @@ ul.nav {
 
 /* Modal */
 
-.carousel
-{
-
-}
-
-.carousel_text
-{
+.carousel_text {
     background-color: rgba(50, 50, 50, 0.7);
     border: 1px solid grey;
     padding: 5px;
@@ -44,12 +39,12 @@ ul.nav {
     position: relative;
     left: auto;
     right: auto;
-    bottom: 10px;
 }
 
 .carousel-control {
     position: absolute;
     width: 20px;
+    bottom: 40%;
     background: transparent;
 }
 
@@ -62,13 +57,14 @@ ul.nav {
     color: grey;
 }
 
-.tileBox p {
+.tileBox p{
     background-color: #f0f0f0;
     font-size: 15px;
     color: #777777;
     padding: 10px;
     margin: 0px;
 }
+
 
 #bartitle {
     font-family: 'Special Elite', monospace;
@@ -78,6 +74,9 @@ ul.nav {
 
 }
 
+
+
+
 #skills {
     background-color: #FCFCFC;
 }
@@ -85,26 +84,6 @@ ul.nav {
 #get-involved {
     background-color: #FCFCFC;
 }
-
-.embed-container {
-     position: relative;
-     padding-bottom: 56.25%;
-     height: 0;
-     overflow: hidden;
-     max-width: 100%;
- }
-
-.embed-container iframe,
-.embed-container object, .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
 
 footer {
     background-color: #000000;
@@ -126,37 +105,15 @@ footer {
 
 .jumbotron {
     text-align: center;
+    background-image: url('../images/header2.jpg');
     text-align: center;
-    background:transparent;
     color: white;
     height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 0px;
 
 }
-
-.jumbobg
-{
-    background: url('../images/header2.jpg') no-repeat center center;
-    position: fixed;
-    width: 100%;
-    height: 250px; /*same height as jumbotron */
-    top:70px;
-    left:0;
-    z-index: -1;
-}
-
-
-
-@media only screen and (max-width: 768px)
-{
-    .jumboimg
-    {
-        width:100px;
-        height:auto;
-        background:black;
-    }
-}
-
 
 .navbar-nav > li > a {
     font-family: 'Special Elite', monospace;
@@ -243,6 +200,8 @@ footer {
     opacity: 1;
 }
 
+
+
 .modalDialog p {
     text-align: justify;
 }
@@ -251,6 +210,7 @@ footer {
     text-align: center;
     font-family: 'Special Elite', monospace;
 }
+
 
 .modal-content {
     width: 90%;
@@ -316,6 +276,7 @@ footer {
 .container img {
     width: 85%;
 }
+
 
 #example {
     background-color: #F7F7F7;
@@ -389,9 +350,10 @@ progress::-webkit-progress-value {
 
 /* Progress bar end */
 
-.secPad {
-    padding: 60px 0;
+.secPad{
+    padding:60px 0;
 }
+
 
 .work-callout_with-border {
     border-style: solid;
@@ -495,6 +457,7 @@ progress::-webkit-progress-value {
     font-size: 1.2em;
 }
 
+
 .bg-parlex {
     padding-top: 0px;
     background-image: url('../images/header.png');
@@ -502,212 +465,225 @@ progress::-webkit-progress-value {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .parlex-back {
     padding: 30px 0;
-    background-color: rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 0, 0, 0.20);
     color: #FDFDFD !important;
 }
 
-.parlexContents {
-    padding: 60px 0;
+.parlexContents
+{
+    padding:60px 0;
 
 }
 
-.portfolioContainer {
+.portfolioContainer
+{
 
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FFFFFF, #E3E3E3, #d9d9d9);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FFFFFF, #E3E3E3, #d9d9d9);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
-    height: 100%;
-    width: 100%;
-    overflow:hidden;
+    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
+    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
+
+    padding-top:20px;
+    padding-bottom:30px;
 }
 
-.portfolioExample {
-    padding: 30px;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    display: block;
 
+
+.portfolioRow
+{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.portfolioDiv
+{
+    padding: 0 20px 0 20px ;
+}
+
+.portfolioDivleft
+{
+    padding: 0 20px 0 20px ;
+    background: red;
+}
+.portfolioDivright
+{
+    padding: 0 20px 0 20px ;
+    background: green;
+}
+
+
+
+.portfolioContents
+{
+
+    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
     background: #d9d9d9; /* For browsers that do not support gradients */
-    /*Safari 5.1 to 6.0*/
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF,#E3E3E3 ,#d9d9d9);
+    /* Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FFFFFF,#E3E3E3 ,#d9d9d9);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FFFFFF,#E3E3E3 ,#d9d9d9);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
+    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
+    background: radial-gradient(farthest-side at 40% 40%, #d9d9d9,#ABB2B3 ,#919B9C);
+    border-radius:3px;
+}
+.portfolioContents h3
+{
+    padding-top:4px;
+}
+
+
+
+.skillsNewcolummn
+{
+    padding:0 20px 0 20px;
+}
+
+.skillsInnercolumn
+{
+    padding:40px;
+    border-radius: 3px;
+    background: #d9d9d9; /* For browsers that do not support gradients */
+    /* Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
+    /* For Opera 11.6 to 12.0 */
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
+    /* Standard syntax */
+    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
     background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
 }
 
-.portfolioRow {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.portfolioDiv {
-    padding: 0 20px 0 20px;
-}
-
-
-.portfolioContents {
-
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #FFFFFF, #E3E3E3, #d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-    /* Standard syntax */
-    background: radial-gradient(farthest-side at 40% 40%, #FFFFFF, #E3E3E3, #d9d9d9 );
-    border-radius: 3px;
-}
-
-.portfolioContents h3 {
-    padding-top: 4px;
-}
-
-.portfolioExample h3 {
-    text-align: center;
-    font-family: 'Special Elite', monospace;
-}
-
-.portfolioExample hr {
-    border-top: 1px solid #c0392b;
-    width: 214px;
-    margin-top: 15px;
-}
-
-.skillsNewcolummn {
-    padding: 0 20px 0 20px;
-}
-
-.skillsInnercolumn {
-    padding: 40px;
-    border-radius: 3px;
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #FFFFFF, #E3E3E3, #d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-    /* Standard syntax */
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
-}
-
-.skillsInnercolumn p {
+.skillsInnercolumn p
+{
     text-align: left;
     font-weight: lighter;
-    color: #737373;
+    color:#737373;
 }
 
-.skillsInnercolumn span {
-    color: black;
+.skillsInnercolumn span
+{
+    color:black;
 }
 
-.skillsRow {
-    padding: 40px 15px 40px 15px;
+.skillsRow
+{
+    padding:40px 15px 40px 15px;
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #FAFAFA, #E8E8E8, #d9d9d9);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
     /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
 }
 
-.skillsProgresbar {
-    width: 100%;
+
+.skillsProgresbar
+{
+    width:100%;
     color: black;
     font-weight: bold;
-    background: rgba(255, 86, 56, 1);
-    background: -moz-linear-gradient(top, rgba(255, 86, 56, 1) 0%, rgba(219, 172, 164, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 86, 56, 1)), color-stop(100%, rgba(219, 172, 164, 1)));
-    background: -webkit-linear-gradient(top, rgba(255, 86, 56, 1) 0%, rgba(219, 172, 164, 1) 100%);
-    background: -o-linear-gradient(top, rgba(255, 86, 56, 1) 0%, rgba(219, 172, 164, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(255, 86, 56, 1) 0%, rgba(219, 172, 164, 1) 100%);
-    background: linear-gradient(to bottom, rgba(255, 86, 56, 1) 0%, rgba(219, 172, 164, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5638', endColorstr='#dbaca4', GradientType=0);
+    background: rgba(255,86,56,1);
+    background: -moz-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,86,56,1)), color-stop(100%, rgba(219,172,164,1)));
+    background: -webkit-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5638', endColorstr='#dbaca4', GradientType=0 );
 
 }
 
-.skillsProgresbar2 {
-    width: 100%;
+
+.skillsProgresbar2
+{
+    width:100%;
     color: black;
     font-weight: bold;
-    background: rgba(219, 172, 164, 1);
-    background: -moz-linear-gradient(top, rgba(219, 172, 164, 1) 0%, rgba(255, 86, 56, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219, 172, 164, 1)), color-stop(100%, rgba(255, 86, 56, 1)));
-    background: -webkit-linear-gradient(top, rgba(219, 172, 164, 1) 0%, rgba(255, 86, 56, 1) 100%);
-    background: -o-linear-gradient(top, rgba(219, 172, 164, 1) 0%, rgba(255, 86, 56, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(219, 172, 164, 1) 0%, rgba(255, 86, 56, 1) 100%);
-    background: linear-gradient(to bottom, rgba(219, 172, 164, 1) 0%, rgba(255, 86, 56, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbaca4', endColorstr='#ff5638', GradientType=0);
+    background: rgba(219,172,164,1);
+    background: -moz-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,172,164,1)), color-stop(100%, rgba(255,86,56,1)));
+    background: -webkit-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
+    background: -o-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
+    background: -ms-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
+    background: linear-gradient(to bottom, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbaca4', endColorstr='#ff5638', GradientType=0 );
 }
 
-.whoContainer {
+
+
+.whoContainer
+{
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
     /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
     margin-bottom: 0px;
 }
 
-.whoDiv {
+.whoDiv{
     padding: 0 20px 0 20px;
 }
 
-.whoContents {
+.whoContents
+{
     border-radius: 2px;
-    padding: 20px;
-    background: snow;
+    padding:20px;
+    background:snow;
 }
 
-.wieisapContainer {
+.wieisapContainer
+{
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
     /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 40% 40%, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: radial-gradient(farthest-side at 40% 40%, #E8E8E8 ,#d9d9d9,#BDBDBD);
     margin-bottom: 0px;
 }
 
-.getInvolved {
+.getInvolved
+{
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
     /* Standard syntax */
     /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #E8E8E8, #d9d9d9, #BDBDBD);
+    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
 }
+
+
+
 
 .container img {
     width: 60%;
@@ -729,6 +705,7 @@ progress::-webkit-progress-value {
 #example2 {
     width: 100%;
 }
+
 
 @media (min-width: 1200px) {
     #example, #example2 {
