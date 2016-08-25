@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="701f8c64-999f-4dd0-92cd-bc99f1d134a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloud_animation/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloud_animation/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloud_animation/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloud_animation/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/header1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_svg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oefen_svg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oefen_svg2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/welcome_animation/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/welcome_animation/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/welcome_animation/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/welcome_animation/license.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_en.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/device-2015-03-25-125507.png" afterPath="$PROJECT_DIR$/images/device-2015-03-25-125507.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/groepsmaker_screen1.png" afterPath="$PROJECT_DIR$/images/groepsmaker_screen1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/groepsmaker_screen2.png" afterPath="$PROJECT_DIR$/images/groepsmaker_screen2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/groepsmaker_screen3.png" afterPath="$PROJECT_DIR$/images/groepsmaker_screen3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mapper_screenshot1.png" afterPath="$PROJECT_DIR$/images/mapper_screenshot1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mapper_screenshot2.png" afterPath="$PROJECT_DIR$/images/mapper_screenshot2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mapper_screenshot3.png" afterPath="$PROJECT_DIR$/images/mapper_screenshot3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mapper_screenshot4.png" afterPath="$PROJECT_DIR$/images/mapper_screenshot4.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example1.html" afterPath="$PROJECT_DIR$/example1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example2.html" afterPath="$PROJECT_DIR$/example2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example3.html" afterPath="$PROJECT_DIR$/example3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example4.html" afterPath="$PROJECT_DIR$/example4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example5.html" afterPath="$PROJECT_DIR$/example5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example6.html" afterPath="$PROJECT_DIR$/example6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_nl.html" afterPath="$PROJECT_DIR$/index_nl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_old.html" afterPath="$PROJECT_DIR$/index_old.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scratch" afterPath="$PROJECT_DIR$/scratch" />
     </list>
     <ignored path="website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,8 +79,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/welcome_animation/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.41949153">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -462,6 +428,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -480,7 +460,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/workspace/confabulator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="preferences.editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -662,7 +642,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32780612" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1074,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/welcome_animation/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.41949153">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
