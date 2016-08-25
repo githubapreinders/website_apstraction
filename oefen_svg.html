@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og:http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!--Tags for rendering correct website thumbnail-->
+    <meta property="og:title" content="Apstraction ICT"/>
+    <meta property="og:type" content="image/png"/>
+    <meta property="og:url" content="http://apstraction.nl/images/headlogo2.png"/>
+    <meta property="og:image" content="http://apstraction.nl/images/headlogo2.png"/>
+
+
+    <title>Apstraction</title>
+
+
+    <!--Internationalization links-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+
+    <script type="text/javascript" src="bower_components/velocity/velocity.js"></script>
+
+    <script type="text/javascript" src="js/controller.js"></script>
+
+    <!--These are our Google fonts and Font-Awesome -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <!--<script src="../../assets/js/ie8-responsive-file-warning.js"></script>--><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <![endif]-->
+    <link href="images/favicon.png" rel="icon" type="image/png"/>
+
+    <style>
+
+        .mysvg
+        {
+            margin-right:auto;
+            margin-left:auto;
+            display:block;
+            background: blue;
+        }
+
+        .mycircle
+        {
+            fill:#201607;
+            stroke:black;
+            stroke-width:5;
+        }
+        .myrect
+        {
+            fill:#201607;
+            stroke:#aa4455;
+            stroke-width:2px;
+        }
+
+        #mywheel
+        {
+
+        }
+
+
+        .st0 {
+            fill: url(#XMLID_142_);
+            stroke: #000000;
+            stroke-width: 6;
+            stroke-miterlimit: 10;
+        }
+
+        .st1 {
+            fill: none;
+            stroke: #000000;
+            stroke-width: 6;
+            stroke-miterlimit: 10;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+        }
+
+        .st0 {
+            fill: #7171B3;
+            stroke: #000000;
+            stroke-width: 3;
+            stroke-miterlimit: 10;
+        }
+
+        .st1 {
+            fill: #DCDCE2;
+            stroke: #000000;
+            stroke-width: 1;
+            stroke-miterlimit: 10;
+        }
+
+        .st2 {
+            fill: #010202;
+        }
+
+        .containerDiv {
+            width: 90%;
+            height: 90%;
+            margin-top: 5%;
+            margin-bottom: auto;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #b9def0;
+        }
+
+        .circle2 {
+            transform-origin: 120px 60px 0;
+        }
+
+        svg {
+
+        }
+
+        .circle_with_eyes {
+
+        }
+
+        #XMLID_2_ {
+
+        }
+
+        #circle1 {
+            display: none;
+            transform-origin: 40px 40px 0;
+        }
+
+        #circle2 {
+            transform-origin: 140px 140px 0;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body ng-app="app" ng-controller="mainCtrl as vm">
+
+<svg width="50%" height="300" class="mysvg" viewBox="0 0 800 300">
+    <defs>
+        <g id="wheel_" >
+            <radialGradient id="XMLID_142_" cx="42.6663" cy="42.9974" r="38.8157"
+                            gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color:#DEDC00"/>
+                <stop offset="1" style="stop-color:#F9B233"/>
+            </radialGradient>
+            <ellipse id="XMLID_1_" class="st0" cx="40" cy="40" rx="40" ry="40"/>
+            <line id="XMLID_4_" class="st1" x1="40.0" y1="40.0" x2="18.2" y2="73.1"/>
+            <line id="XMLID_85_" class="st1" x1="40.0" y1="1" x2="40.0" y2="40.0"/>
+            <line id="XMLID_6_" class="st1" x1="40.0" y1="40" x2="67.1" y2="73.1"/>
+        </g>
+        <rect id="myrect_" x="130" y="10" height="50" width="50"
+              rx="15" ry="15"
+        />
+    </defs>
+    <use id="mywheel"  xlink:href="#wheel_" x="0" y="0"/>
+    <use class="myrect" xlink:href="#myrect_" x="0" y="0"/>
+</svg>
+
+
+<!--<div class="containerDiv">-->
+
+    <!--<svg>-->
+        <!--<defs>-->
+        <!--<g id="XMLID_2_" class="XMLID_2_">-->
+        <!--<ellipse id="XMLID_1_" class="st0" cx="40.0" cy="40.0" rx="40.0" ry="40.0"/>-->
+        <!--<ellipse id="XMLID_3_" class="st1" cx="34.7" cy="65.5" rx="7.2" ry="7.1"/>-->
+        <!--<ellipse id="XMLID_4_" class="st1" cx="51.6" cy="65.5" rx="7.2" ry="7.1"/>-->
+        <!--<ellipse id="XMLID_5_" class="st2" cx="34.7" cy="65.5" rx="3.6" ry="3.6"/>-->
+        <!--<ellipse id="XMLID_6_" class="st2" cx="51.6" cy="65.5" rx="3.6" ry="3.6"/>-->
+        <!--</g>-->
+
+
+        <!--</defs>-->
+
+        <!--&lt;!&ndash;<use xlink:href="#XMLID_2_" x="20" y="20"></use>&ndash;&gt;-->
+
+        <!--<svg >-->
+        <!--<use  id="circle1" xlink:href="#XMLID_2_" x="1" y="1"  ></use>-->
+        <!--</svg>-->
+
+        <!--<svg >-->
+        <!--<use  id="circle2" xlink:href="#XMLID_2_" x="100" y="100"  ></use>-->
+        <!--</svg>-->
+
+        <!--<svg >-->
+        <!--<use id="circle3"  xlink:href="#XMLID_2_" x="460" y="210"  ></use>-->
+        <!--</svg>-->
+
+
+        <!--<defs>-->
+            <!--<circle cx=25 cy=25 rx=50 class="mycircle" fill="#201607"/>-->
+
+        <!--</defs>-->
+
+
+    <!--</svg>-->
+    <!--<form id="formInput">-->
+
+        <!--<input type="submit" value="Start">-->
+
+    <!--</form>-->
+    <!--<div style=" width:100px; height:100px;background: blue;">-->
+        <!--<svg viewBox="0 0 250 100" style="border: 1px solid black">-->
+            <!--<use xlink:href="#codepen-box" stroke="#aabbcc"></use>-->
+        <!--</svg>-->
+    <!--</div>-->
+
+<!--</div>-->
+<script>
+
+
+//    var circle1 = $("#circle1");
+//    var circle2 = $("#circle2");
+//    var circle3 = $("#circle3");
+//
+//    function start()
+//    {
+//
+//        circle.velocity({translateX: 250}, {duration: 1000, delay: 0})
+//                .velocity({translateY: 100}, {duration: 1000, delay: 0})
+//                .velocity({translateX: 500}, {duration: 1000, delay: 0})
+//                .velocity({translateY: 0}, {duration: 1000, delay: 0});
+//
+//        containerDiv_inner.velocity({width: "100%"}, {duration: 1000, delay: 0});
+//
+//        started = true;
+//    }
+//
+//    function stop()
+//    {
+//        if (started)
+//        {
+//            circle.velocity("stop");
+//            $("#pauseButton").prop('value', 'restart');
+//            started = false;
+//        }
+//        else
+//        {
+//            $("#pauseButton").prop('value', 'stop');
+//            start();
+//        }
+//    }
+//
+//    var handleInput = function ()
+//    {
+//        $("#formInput").on('submit', function (event)
+//        {
+//            console.log("handling input...");
+//
+//
+//            circle1.velocity({translateX: [920, 0], rotateZ: "360deg"}, {display: "inline", duration: 1000, delay: 0})
+//                    .velocity({translateY: [300, 0], rotateZ: "360deg"}, {duration: 1000, delay: 0})
+//            circle2.velocity({translateX: 400, rotateZ: "360deg"}, {display: "inline", duration: 1000, delay: 0})
+//
+//            event.stopPropagation();
+//
+//
+//        })
+//    }
+//
+//    handleInput();
+
+
+//var mywheel =$("#mywheel");
+//mywheel.velocity({translateX:"709"},{duration:2000}).velocity({translateY:"300"},{duration:2000}).velocity({translateX:"0"},{duration:2000}).velocity({translateY:"0"},{duration:2000}).velocity({rotateZ:"360deg"},{duration:2000})
+
+</script>
+
+
+</body>
+
+</html>

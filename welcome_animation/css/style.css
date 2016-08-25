@@ -1,0 +1,142 @@
+/*.myText*/
+/*{*/
+  /*font-size:3em;*/
+  /*stroke:white;*/
+  /*fill:white;*/
+  /*text-anchor:middle;*/
+/*}*/
+
+/*.myDiv*/
+/*{*/
+  /*position:absolute;*/
+  /*width:30px;*/
+  /*height:30px;*/
+  /*border:2px solid blue;*/
+  /*background: fuchsia;*/
+/*}*/
+
+/*.myBall*/
+/*{*/
+  /*opacity:0;*/
+  /*transform-origin:25px 25px 0;*/
+  /*stroke-width: 2px;*/
+/*}*/
+
+/*#myBall1*/
+/*{*/
+  /*stroke: red;*/
+/*}*/
+
+/*#myBall2*/
+/*{*/
+  /*stroke:orange;*/
+/*}*/
+
+/*#myBall3*/
+/*{*/
+  /*stroke: yellow;*/
+/*}*/
+
+/*#myBall4*/
+/*{*/
+  /*stroke:green;*/
+/*}*/
+
+/*#myBall5*/
+/*{*/
+  /*stroke: blue;*/
+/*}*/
+
+/*#myBall6*/
+/*{*/
+  /*stroke:purple;*/
+/*}*/
+
+/*#myBall7*/
+/*{*/
+  /*stroke: fuchsia;*/
+/*}*/
+
+/*.mySvg*/
+/*{*/
+  /*background: linear-gradient(#A0ACB0, #70858C,#799EAB);*/
+/*}*/
+
+/*#playButton:hover*/
+/*{*/
+  /*transform: scale(1.1);*/
+/*}*/
+
+
+.myText
+{
+  font-size:3em;
+  stroke:white;
+  fill:white;
+  text-anchor:middle;
+}
+
+.myDiv
+{
+  position:absolute;
+  width:30px;
+  height:30px;
+  border:2px solid blue;
+  background: fuchsia;
+}
+
+.myBall
+{
+  opacity:0;
+  -webkit-transform-origin:25px 25px 0;
+  transform-origin:25px 25px 0;
+  stroke-width: 2px;
+}
+
+#myBall1
+{
+  stroke: red;
+}
+
+#myBall2
+{
+  stroke:orange;
+}
+
+#myBall3
+{
+  stroke: yellow;
+}
+
+#myBall4
+{
+  stroke:green;
+}
+
+#myBall5
+{
+  stroke: blue;
+}
+
+#myBall6
+{
+  stroke:purple;
+}
+
+#myBall7
+{
+  stroke: fuchsia;
+}
+
+.mySvg
+{
+  background: -webkit-linear-gradient(#A0ACB0, #70858C,#799EAB);
+  background: linear-gradient(#A0ACB0, #70858C,#799EAB);
+}
+
+#playButton:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+

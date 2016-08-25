@@ -33,24 +33,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]>
-    <!--<script src="../../assets/js/ie8-responsive-file-warning.js"></script>--><![endif]-->
-    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    [if lt IE 9]
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    [endif]
     <link href="images/favicon.png" rel="icon" type="image/png"/>
 </head>
 
-<body style="height: 100%;"  onload="modal_gro_loaded()" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -75,7 +61,7 @@
                 <li><a id="example04" href="example4.html"><img src="images/titleimg_groupmaker_small.png" ></a></li>
                 <li><a id="example05" href="example5.html"><img src="images/titleimg_anim_inactive.png" ></a></li>
                 <li><a id="example06" href="example6.html"><img src="images/titleimg_ideas_inactive.png" ></a></li>
-
+                <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag" ng-src="{{vm.language=='en' && 'images/flag_nl.png'||vm.language=='nl'&& 'images/flag_uk.png'}}" /></a> </li>
 
 
             </ul>
@@ -99,7 +85,7 @@
                             <p style="padding:10px;"></p>
 
                             <div class="carousel-caption img-rounded carousel_text">
-                                <p id="modal_group1">Groupmaker is an application for teachers. In modern teaching practice classes very often have to be split up in order to complete an assignment. The learning experience is enhanced through the cooperation process. However class management is more difficult.The group can easily be split up in duos, triplets or how many groups there are needed.</p>
+                                <p id="modal_group1">{{vm.text['modal_group1']}}</p>
                             </div>
                         </div>
 
@@ -110,7 +96,7 @@
                             <p style="padding:10px;"></p>
 
                             <div class="carousel-caption img-rounded carousel_text ">
-                                <p id="modal_group2">Very often the teacher wants to place people together, or apart from eachother. In the app the red colors will be placed in different groups, the green colors in the same subgroup. The app will make a division based on the given conditions.</p>
+                                <p id="modal_group2">{{vm.text['modal_group2']}}</p>
                             </div>
                         </div>
 
@@ -121,7 +107,7 @@
                             <p style="padding:10px;"></p>
 
                             <div class="carousel-caption img-rounded carousel_text">
-                                <p id="modal_group3">Sometimes a group leader wants to have people distributed evenly. Like for example all the girls in a certain group. Results can be transmitted to the digital whiteboard, or to collegues via sms or email;</p>
+                                <p id="modal_group3">{{vm.text['modal_group3']}}</p>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-sm-offset-4">
                                 <a style="" href="https://github.com/githubapreinders/groepsmaker1"
@@ -148,6 +134,7 @@
     </div>
 </div>
 
+
 <div id="get-involved">
     <div class="container-fluid homepage getInvolved">
         <h2>Contact</h2>
@@ -160,7 +147,7 @@
       </span>
 
                 <p>
-                    Call today on +31621939356</p>
+                    {{vm.text['calltoday']}} +31621939356</p>
             </div>
             <div class="col-md-4">
         <span class="fa-stack fa-lg fa-4x">
@@ -168,7 +155,7 @@
           <i class="fa fa-envelope fa-stack-1x"></i>
         </span>
 
-                <p><a href="mailto:apstractionict@gmail.com">Email</a> for more information!</p>
+                <p><a href="mailto:apstractionict@gmail.com">Email</a> {{vm.text[moreinfo]}}</p>
 
             </div>
             <div class="col-md-4">
@@ -177,8 +164,8 @@
           <i class="fa fa-linkedin fa-stack-1x"></i>
         </span>
 
-                <p>Find me on <a href="https://www.linkedin.com/pub/ap-reinders/95/aa3/332"
-                                 target="_blank">LinkedIn</a></p>
+                <p>{{vm.text['linkedin']}}<a href="https://www.linkedin.com/pub/ap-reinders/95/aa3/332"
+                                             target="_blank">LinkedIn</a></p>
 
             </div>
         </div>
@@ -190,11 +177,13 @@
 <footer>
     <div id="back-to-top">
         <a href="index.html#home"><i class="fa fa-arrow-up fa-4x"
-                           style="margin-right: 100px;margin-bottom: -5px;"></i></a>
+                                     style="margin-right: 100px;margin-bottom: -5px;"></i></a>
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="js/controller.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 </body>

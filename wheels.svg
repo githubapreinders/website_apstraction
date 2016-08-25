@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 85.1 85.1" style="enable-background:new 0 0 85.1 85.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_142_);stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+</style>
+<g id="XMLID_87_">
+	<radialGradient id="XMLID_142_" cx="42.6663" cy="42.9974" r="38.8157" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#DEDC00"/>
+		<stop  offset="1" style="stop-color:#F9B233"/>
+	</radialGradient>
+	<ellipse id="XMLID_1_" class="st0" cx="42.7" cy="43" rx="38.9" ry="38.8"/>
+	<line id="XMLID_4_" class="st1" x1="44.1" y1="43" x2="18.2" y2="73.1"/>
+	<line id="XMLID_85_" class="st1" x1="44.1" y1="4.2" x2="44.1" y2="45.6"/>
+	<line id="XMLID_6_" class="st1" x1="44.1" y1="43" x2="67.1" y2="73.1"/>
+</g>
+</svg>

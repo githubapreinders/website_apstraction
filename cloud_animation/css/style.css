@@ -1,0 +1,85 @@
+
+body {
+    padding-top: 70px;
+    background: grey;
+}
+
+.jumbobg {
+    position: fixed;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 200px;
+    top: 70px;
+    left: 0;
+}
+
+.jumbotron {
+
+    background: transparent;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0px;
+
+}
+
+.headlogo3 {
+    display: block;
+    float: right;
+}
+
+.mainContainer {
+    margin-top: 220px;
+
+}
+
+.mySvg {
+    background: linear-gradient(#A0ACB0, #76858A, #87A0A8);
+}
+
+#playButton:hover {
+    transform: scale(1.1);
+}
+
+.cloud_style {
+    fill: url(#cloud1_gradient);
+    opacity: 0.40;
+}
+
+.cloud2_style {
+    /*transform: translate(100px, -80px) scaleX(2.1) scaleY(4.1);*/
+    opactiy:0;
+}
+
+.cloud1_style {
+    opactiy:0;
+    /*transform: translate(-200px, 0px) scale(4.0);*/
+}
+
+@keyframes speed {
+    from {
+        left: -120px;
+    }
+    to {
+        left: 130%
+    }
+}
+
+.navbar {
+    height: 70px;
+}
+
+.navbar-nav > li > a {
+    font-family: 'Special Elite', monospace;
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #777;
+}
+
