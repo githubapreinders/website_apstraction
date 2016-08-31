@@ -4,6 +4,7 @@
 }
 
 body {
+    display:none;
     background: #d9d9d9; /* For browsers that do not support gradients */
     /* Safari 5.1 to 6.0 */
     background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
@@ -92,7 +93,8 @@ ul.nav {
 
 .embed-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 40%;
+
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -103,8 +105,10 @@ ul.nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #flag
@@ -141,7 +145,13 @@ footer {
 
 .jumbotron {
 
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
     background:transparent;
     color: white;
@@ -527,6 +537,7 @@ progress::-webkit-progress-value {
     background: -moz-radial-gradient(40% 40%, farthest-side,#FFFFFF, #E3E3E3, #d9d9d9);
     /* Standard syntax */
     background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+    margin-top:72px;
     width: 100%;
     height: 100%;
     overflow:hidden;
@@ -749,6 +760,11 @@ progress::-webkit-progress-value {
 }
 
 
+.youtubeLink
+{
+    float:none;
+    margin-left: auto;
+}
 
 
 

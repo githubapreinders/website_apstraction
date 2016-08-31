@@ -36,10 +36,9 @@
     <link href="images/favicon.png" rel="icon" type="image/png"/>
 </head>
 
-<body ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body ng-style="vm.loadingReady" ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+<div class=" navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -55,7 +54,7 @@
             <ul class="nav navbar-nav navbar-right" >
                 <li><a>PORTFOLIO</a></li>
                 <li><a id="example01" href="example1.html"><img src="images/titleimg_impatient_inactive.png" ></a></li>
-                <li class="active"><a id="example02" href="example2.html"><img src="images/titleimg_tafeltrainer_inactive.png" ></a></li>
+                <li class="active"><a id="example02" href="example2.html"><img src="images/titleimg_tafeltrainer_small.png" ></a></li>
                 <li><a id="example03" href="example3.html"><img src="images/titleimg_gouda_inactive.png" ></a></li>
                 <li><a id="example04" href="example4.html"><img src="images/titleimg_groupmaker_inactive.png" ></a></li>
                 <li><a id="example05" href="example5.html"><img src="images/titleimg_anim_inactive.png" ></a></li>
@@ -64,7 +63,6 @@
 
 
             </ul>
-        </div>
     </div>
 </div>
 

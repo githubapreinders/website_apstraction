@@ -31,10 +31,9 @@
     <link href="images/favicon.png" rel="icon" type="image/png"/>
 </head>
 
-<body ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body ng-style="vm.loadingReady" ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+<div class=" navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -50,17 +49,14 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav navbar-right" >
                 <li><a>PORTFOLIO</a></li>
-                <li class="active"><a id="example01" href="example1.html"><img src="images/titleimg_impatient_inactive.png" ></a></li>
+                <li class="active"><a id="example01" href="example1.html"><img src="images/titleimg_impatient_small.png" ></a></li>
                 <li><a id="example02" href="example2.html"><img src="images/titleimg_tafeltrainer_inactive.png" ></a></li>
                 <li><a id="example03" href="example3.html"><img src="images/titleimg_gouda_inactive.png" ></a></li>
                 <li><a id="example04" href="example4.html"><img src="images/titleimg_groupmaker_inactive.png" ></a></li>
                 <li><a id="example05" href="example5.html"><img src="images/titleimg_anim_inactive.png" ></a></li>
                 <li><a id="example06" href="example6.html"><img src="images/titleimg_ideas_inactive.png" ></a></li>
                 <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag" ng-src="{{vm.language=='en' && 'images/flag_nl.png'||vm.language=='nl'&& 'images/flag_uk.png'}}" /></a> </li>
-
-
             </ul>
-        </div>
     </div>
 </div>
 
@@ -75,12 +71,8 @@
                     <div class="carousel-inner"  role="listbox">
                         <div class="item active ">
                             <div class="col-xs-1"></div>
-                            <div class="col-xs-10">
-
-                                <div class='embed-container'>
-                                    <iframe src='https://www.youtube.com/embed/u9fjKquGGzI' frameborder='0'
-                                            allowfullscreen></iframe>
-                                </div>
+                            <div class="col-xs-10 youtubeLink" >
+                                    <a href="https://www.youtube.com/embed/u9fjKquGGzI" target="_blank"><img  class="img-responsive" src="images/screenshot_impatient.png"/></a>
                             </div>
                             <div class="col-xs-1"></div>
                             <div class="col-xs-12"><p style="padding:10px;"></p></div>

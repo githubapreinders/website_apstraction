@@ -36,10 +36,9 @@
     <link href="images/favicon.png" rel="icon" type="image/png"/>
 </head>
 
-<body ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body ng-style="vm.loadingReady" ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+<div class=" navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -64,7 +63,6 @@
                 <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag" ng-src="{{vm.language=='en' && 'images/flag_nl.png'||vm.language=='nl'&& 'images/flag_uk.png'}}" /></a> </li>
             </ul>
         </div>
-    </div>
 </div>
 
 

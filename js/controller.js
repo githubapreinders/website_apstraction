@@ -3,10 +3,11 @@
 'use strict'
 var app = angular.module('app',[]);
 
-app.controller('mainCtrl', function(textFactory)
+app.controller('mainCtrl', function(textFactory, $element)
 {
     //console.log('mainCtrl working...');
     var vm = this;
+    vm.loadingReady={display:"none"};
     vm.text={};
     vm.language="en";
     vm.changeLanguage =changeLanguage;
@@ -44,11 +45,9 @@ app.controller('mainCtrl', function(textFactory)
                 vm.text[theText[i].key]=theText[i].nl;
             }
         }
-
-
         //console.log(angular.toJson(vm.text));
     }
-
+ vm.loadingReady={display:"initial"}
 
 })
 
