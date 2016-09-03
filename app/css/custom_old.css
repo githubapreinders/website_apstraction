@@ -1,27 +1,12 @@
-
-@font-face {
-    font-family: "Special Elite";
-    src: url(../fonts/special_elite/SpecialElite.ttf);
-}
-
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
 }
 
 ul.nav {
     font-family: 'Lato', sans-serif;
 }
+
 
 ul.nav {
     font-size: 13px;
@@ -29,26 +14,30 @@ ul.nav {
 
 /* Modal */
 
-.carousel_text {
-    background-color: rgba(50, 50, 50, 0.7);
-    border: 1px solid grey;
-    padding: 5px;
+.carousel_text
+{
+    background-color:rgba(50,50,50,0.7);
+    border:1px solid grey;
+    padding:5px;
 }
 
-.carousel-caption {
+.carousel-caption
+{
     position: relative;
     left: auto;
     right: auto;
 }
 
-.carousel-control {
+.carousel-control
+{
     position: absolute;
     width: 20px;
-    bottom: 40%;
-    background: transparent;
+    bottom:40%;
+    background:transparent;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left, .carousel-control.right
+{
     background-image: none
 
 }
@@ -57,13 +46,6 @@ ul.nav {
     color: grey;
 }
 
-.tileBox p{
-    background-color: #f0f0f0;
-    font-size: 15px;
-    color: #777777;
-    padding: 10px;
-    margin: 0px;
-}
 
 
 #bartitle {
@@ -75,8 +57,6 @@ ul.nav {
 }
 
 
-
-
 #skills {
     background-color: #FCFCFC;
 }
@@ -86,7 +66,7 @@ ul.nav {
 }
 
 footer {
-    background-color: #000000;
+    background-color:#000000;
     padding-top: 50px;
     padding-bottom: 30px;
     position: relative;
@@ -103,29 +83,34 @@ footer {
     color: #FFFFFF;
 }
 
+
+
+
+
 .jumbotron {
     text-align: center;
     background-image: url('../images/header2.jpg');
     text-align: center;
     color: white;
-    height: 250px;
+    height:250px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 0px;
+
 
 }
 
-.navbar-nav > li > a {
+
+.navbar-nav>li>a {
     font-family: 'Special Elite', monospace;
     font-size: 1.2em;
-    line-height: 40px;
+    line-height:40px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav>li>a {
     color: white;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav>li>a:hover {
     color: #777;
 }
 
@@ -135,6 +120,9 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+
+
 
 .modal-content button.close {
     position: absolute;
@@ -156,9 +144,9 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0,0,0,0.8);
     z-index: 99999;
-    opacity: 0;
+    opacity:0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
@@ -166,7 +154,7 @@ footer {
 }
 
 .modalDialog:target {
-    opacity: 1;
+    opacity:1;
     pointer-events: auto;
 }
 
@@ -201,6 +189,13 @@ footer {
 }
 
 
+.modal-dialog
+{
+
+
+}
+
+
 
 .modalDialog p {
     text-align: justify;
@@ -212,12 +207,21 @@ footer {
 }
 
 
-.modal-content {
-    width: 90%;
-    height: 100%;
-    padding: 20px;
-    overflow-y: scroll;
+#openModal_impatient > div
+{
+
 }
+
+
+.modal-content
+{
+    width:90%;
+    height:100%;
+    padding:20px;
+    overflow-y:scroll;
+}
+
+
 
 .homepage {
     text-align: center;
@@ -235,14 +239,16 @@ footer {
 .homepage h3 {
     font-family: 'Special Elite', monospace;
     color: #000000;
-    text-transform: capitalize;
+    text-transform: bold;
     font-size: 20px;
 }
+
+
 
 .homepage p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 20px;
+    line-height:20px;
 }
 
 .homepage a, a:active, a:visited {
@@ -262,7 +268,7 @@ footer {
 }
 
 #menu img {
-    margin-top: -5px;
+    margin-top:-5px;
 }
 
 #treatments ul, #price ul {
@@ -270,13 +276,17 @@ footer {
 }
 
 #price strong {
-    color: #84CC1D;
+    color:#84CC1D;
 }
 
 .container img {
     width: 85%;
 }
 
+
+#portfolio {
+    background-color: white;
+}
 
 #example {
     background-color: #F7F7F7;
@@ -290,7 +300,7 @@ footer {
     background-color: #F7F7F7;
     height: 400px;
     width: 48%;
-    margin-bottom: 15px;
+    margin-bottom:15px;
 }
 
 #example2 p {
@@ -298,9 +308,12 @@ footer {
     text-align: justify;
 }
 
+
+
 #who p {
     text-align: justify;
 }
+
 
 .demo-wrapper {
     width: 300px;
@@ -327,17 +340,16 @@ progress::-moz-progress-bar {
     background: #c0392b;
     border-radius: 9px;
 }
-
 progress::-webkit-progress-bar {
     background: #fff;
     border-radius: 9px;
 }
-
 progress::-webkit-progress-value {
     background: #c0392b;
     border-radius: 9px;
 
 }
+
 
 .progress-value {
     padding: 0px 5px;
@@ -349,11 +361,6 @@ progress::-webkit-progress-value {
 }
 
 /* Progress bar end */
-
-.secPad{
-    padding:60px 0;
-}
-
 
 .work-callout_with-border {
     border-style: solid;
@@ -394,7 +401,6 @@ progress::-webkit-progress-value {
 .button_inline, .foundry-article--content .the-link {
     display: inline-block;
 }
-
 .button_standard, .foundry-article--content .the-link {
     color: #a5ebe9;
     background-color: #4cacbe;
@@ -417,6 +423,8 @@ progress::-webkit-progress-value {
     padding-top: 1em;
 }
 
+
+
 /* Reponsive Styling */
 
 @media (max-width: 767px) {
@@ -425,9 +433,11 @@ progress::-webkit-progress-value {
         width: 30%;
         height: 30%;
         float: none;
-        margin-left: 0px;
+        margin-left:0px;
         margin-bottom: 15px;
     }
+
+
 
     .btn-lg {
         font-size: 18px;
@@ -437,16 +447,21 @@ progress::-webkit-progress-value {
         font-size: 18px;
     }
 
+
+
+
     #example {
-        width: 100%;
+        width:100%;
         margin-bottom: 15px;
     }
 
     #example2 {
-        width: 100%;
+        width:100%;
     }
 
 }
+
+
 
 #get-involved .col-md-4 {
     padding-top: 20px;
@@ -457,234 +472,6 @@ progress::-webkit-progress-value {
     font-size: 1.2em;
 }
 
-
-.bg-parlex {
-    padding-top: 0px;
-    background-image: url('../images/header.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.parlex-back {
-    padding: 30px 0;
-    background-color: rgba(0, 0, 0, 0.20);
-    color: #FDFDFD !important;
-}
-
-.parlexContents
-{
-    padding:60px 0;
-
-}
-
-.portfolioContainer
-{
-
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
-
-    padding-top:20px;
-    padding-bottom:30px;
-}
-
-
-
-.portfolioRow
-{
-    padding-left:40px;
-    padding-right:40px;
-}
-
-.portfolioDiv
-{
-    padding: 0 20px 0 20px ;
-}
-
-.portfolioDivleft
-{
-    padding: 0 20px 0 20px ;
-    background: red;
-}
-.portfolioDivright
-{
-    padding: 0 20px 0 20px ;
-    background: green;
-}
-
-
-
-.portfolioContents
-{
-
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 40% 40%, #d9d9d9,#ABB2B3 ,#919B9C);
-    border-radius:3px;
-}
-.portfolioContents h3
-{
-    padding-top:4px;
-}
-
-
-
-.skillsNewcolummn
-{
-    padding:0 20px 0 20px;
-}
-
-.skillsInnercolumn
-{
-    padding:40px;
-    border-radius: 3px;
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
-}
-
-.skillsInnercolumn p
-{
-    text-align: left;
-    font-weight: lighter;
-    color:#737373;
-}
-
-.skillsInnercolumn span
-{
-    color:black;
-}
-
-.skillsRow
-{
-    padding:40px 15px 40px 15px;
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
-}
-
-
-.skillsProgresbar
-{
-    width:100%;
-    color: black;
-    font-weight: bold;
-    background: rgba(255,86,56,1);
-    background: -moz-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,86,56,1)), color-stop(100%, rgba(219,172,164,1)));
-    background: -webkit-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,86,56,1) 0%, rgba(219,172,164,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5638', endColorstr='#dbaca4', GradientType=0 );
-
-}
-
-
-.skillsProgresbar2
-{
-    width:100%;
-    color: black;
-    font-weight: bold;
-    background: rgba(219,172,164,1);
-    background: -moz-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,172,164,1)), color-stop(100%, rgba(255,86,56,1)));
-    background: -webkit-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
-    background: -o-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
-    background: -ms-linear-gradient(top, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
-    background: linear-gradient(to bottom, rgba(219,172,164,1) 0%, rgba(255,86,56,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbaca4', endColorstr='#ff5638', GradientType=0 );
-}
-
-
-
-.whoContainer
-{
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
-    margin-bottom: 0px;
-}
-
-.whoDiv{
-    padding: 0 20px 0 20px;
-}
-
-.whoContents
-{
-    border-radius: 2px;
-    padding:20px;
-    background:snow;
-}
-
-.wieisapContainer
-{
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 40% 40%, #E8E8E8 ,#d9d9d9,#BDBDBD);
-    margin-bottom: 0px;
-}
-
-.getInvolved
-{
-    background: #d9d9d9; /* For browsers that do not support gradients */
-    /* Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Opera 11.6 to 12.0 */
-    background: -o-radial-gradient(40% 40%, farthest-side, red,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* For Firefox 3.6 to 15 */
-    background: -moz-radial-gradient(40% 40%, farthest-side,#FAFAFA,#E8E8E8 ,#d9d9d9);
-    /* Standard syntax */
-    /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-    background: radial-gradient(farthest-side at 20% 40%, #FFFFFF,#E3E3E3 ,#d9d9d9);
-}
-
-
-
-
 .container img {
     width: 60%;
     height: 60%;
@@ -694,18 +481,24 @@ progress::-webkit-progress-value {
 }
 
 #introtext {
-    width: 100%;
+    width:100%;
 }
 
 #example {
-    width: 100%;
+    width:100%;
     margin-bottom: 15px;
 }
 
 #example2 {
-    width: 100%;
+    width:100%;
 }
 
+}
+
+
+
+
+}
 
 @media (min-width: 1200px) {
     #example, #example2 {
@@ -713,6 +506,7 @@ progress::-webkit-progress-value {
     }
 
 }
+
 
 #menu img {
     padding-top: 15px
