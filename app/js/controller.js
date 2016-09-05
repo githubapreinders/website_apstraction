@@ -1,11 +1,10 @@
 (function()
 {
-'use strict'
+'use strict';
 var app = angular.module('app',[]);
-
-app.controller('mainCtrl', function(textFactory, $element)
+    app.controller('mainCtrl', function(textFactory)
 {
-    //console.log('mainCtrl working...');
+    console.log('mainCtrl working...');
     var vm = this;
     vm.loadingReady={display:"none"};
     vm.text={};
@@ -40,21 +39,21 @@ app.controller('mainCtrl', function(textFactory, $element)
 
         else
         {
-            for(var i=0; i<theText.length; i++)
+            for(var j=0; j<theText.length; j++)
             {
-                vm.text[theText[i].key]=theText[i].nl;
+                vm.text[theText[j].key]=theText[j].nl;
             }
         }
         //console.log(angular.toJson(vm.text));
     }
- vm.loadingReady={display:"initial"}
+ vm.loadingReady={display:"initial"};
 
-})
+});
 
 
 //static texts
 app.factory('textFactory',function()
-{
+    {
     return{
         getText: getText
     };
@@ -97,11 +96,11 @@ app.factory('textFactory',function()
             {key:"",en:"",nl:""},
             {key:"",en:"",nl:""},
             {key:"",en:"",nl:""},
-        ]
+        ];
     }
 
-})
+});
 
 
 
-})()
+})();

@@ -1,0 +1,10 @@
+$dark_color : 111144;
+
+div
+{
+  background: $dark_color;
+  .ul
+  {
+    display:flex;
+  }
+}

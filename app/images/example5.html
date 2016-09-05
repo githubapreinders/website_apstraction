@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html style="height: 100%;" class="no-js" lang="en" prefix="og:http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Tags for rendering correct website thumbnail-->
+    <meta property="og:title" content="Apstraction ICT"/>
+    <meta property="og:type" content="image/png"/>
+    <meta property="og:url" content="http://apstraction.nl/images/headlogo2.png"/>
+    <meta property="og:image" content="http://apstraction.nl/images/headlogo2.png"/>
+
+
+    <title>Apstraction</title>
+
+
+    <!--Internationalization links-->
+    <link rel="localization" hreflang="nl" href="lang/nl.json" type="application/vnd.oftn.l10n+json"/>
+    <script type="text/javascript" src="js/i18n.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <!--These are our Google fonts and Font-Awesome -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon" type="image/png"/>
+</head>
+
+<body ng-style="vm.loadingReady" ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<div class=" navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand " id="bartitle" href="index.html#home">
+                <img src="images/headlogo_blank.png" style="height:40px;width:41px;"/></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a>PORTFOLIO</a></li>
+                <li><a id="example01" href="example1.html"><img src="images/titleimg_impatient_inactive.png" ></a></li>
+                <li><a id="example02" href="example2.html"><img src="images/titleimg_tafeltrainer_inactive.png" ></a></li>
+                <li><a id="example03" href="example3.html"><img src="images/titleimg_gouda_inactive.png" ></a></li>
+                <li><a id="example04" href="example4.html"><img src="images/titleimg_groupmaker_inactive.png" ></a></li>
+                <li><a id="example05" href="example5.html"><img src="images/titleimg_anim_small.png" ></a></li>
+                <li><a id="example06" href="example6.html"><img src="images/titleimg_ideas_inactive.png" ></a></li>
+                <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag" ng-src="{{vm.language=='en' && 'images/flag_nl.png'||vm.language=='nl'&& 'images/flag_uk.png'}}" /></a> </li>
+            </ul>
+        </div>
+</div>
+
+
+<div class="container-fluid portfolioContainer">
+    <div id="example0" class="portfolioExample" >
+        <div id="example4"><h3>Quizler</h3>
+<p style="padding:20px;"></p>
+            <p    style="padding: 20px;"><img src="quizler/app/media/quizler.png"><p class="carousel-caption img-rounded carousel_text "  id="example5expl">is a web application for taking surveys and quizzes. Based around Bootstrap and Angular JS the final idea is to make a data-centered interface wherein Teachers make tests for their students and stay informed about the results; The students can do their test at leisure and see their own progress. The teacher dashboard and interconnectivity is still work in progress, but the user part gives a small impression.</p></p>
+            <p style="padding:20px;"></p>
+        <a href="quizler/app/index.html" target="_blank">view quizler</a>
+        </div>
+    </div>
+</div>
+
+<div id="get-involved">
+    <div class="container-fluid homepage getInvolved">
+        <h2>Contact</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-phone fa-stack-1x"></i>
+      </span>
+
+                <p>
+                    {{vm.text['calltoday']}} +31621939356</p>
+            </div>
+            <div class="col-md-4">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span>
+
+                <p><a href="mailto:apstractionict@gmail.com">Email</a> {{vm.text[moreinfo]}}</p>
+
+            </div>
+            <div class="col-md-4">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x"></i>
+        </span>
+
+                <p>{{vm.text['linkedin']}}<a href="https://www.linkedin.com/pub/ap-reinders/95/aa3/332"
+                                             target="_blank">LinkedIn</a></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+
+</div>
+<footer>
+    <div id="back-to-top">
+        <a href="index.html#home"><i class="fa fa-arrow-up fa-4x"
+                                     style="margin-right: 100px;margin-bottom: -5px;"></i></a>
+    </div>
+</footer>
+
+<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+<!--<script src="bower_components/angular/angular.js"></script>-->
+<!--<script src="js/controller.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="js/smoothscroll.js"></script>-->
+<script src="js/main.min.js"></script>
+</body>
+</html>

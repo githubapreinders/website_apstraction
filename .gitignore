@@ -2,5 +2,8 @@
 /cloud_animation
 /welcome_animation
 /old_stuff
+/node_modules
+/bower_components
+/build
 /.idea
 
