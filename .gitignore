@@ -1,9 +1,9 @@
-node_modules
-cloud_animation
-welcome_animation
-old_stuff
-node_modules
-bower_components
-build
-.idea
+node_modules/
+cloud_animation/
+welcome_animation/
+old_stuff/
+node_modules/
+bower_components/
+build/
+.idea/
 
