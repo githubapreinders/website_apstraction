@@ -1,0 +1,8 @@
+.idea
+blog/
+bower_components/
+build/
+cloud_animation/
+lang/
+node_modules/
+old_stuff/
