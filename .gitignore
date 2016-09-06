@@ -3,6 +3,7 @@ blog/
 bower_components/
 build/
 cloud_animation/
+welcome_animation/
 lang/
 node_modules/
 old_stuff/
