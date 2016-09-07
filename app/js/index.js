@@ -78,9 +78,17 @@ $(document).ready(function ()
         });
 
 
+    /*
+    After opening a modal the background body should not be able to scroll; a css property overflow:hidden
+    is added to the body when the modal is open. The property is removed after the closing button is pressed.
+     */
 
-
-
-
+    $("#anchor_openModal_impatient,#anchor_openModal_tafeltrainer,#anchor_openModal_gouda,#anchor_openModal_groupmaker,#anchor_openModal_ideas").on("click", function () {
+        $("body").addClass("modal-open");
+    });
+    $("#modal_impatient_close,#modal_tafeltrainer_close,#modal_gouda_close,#modal_group_close,#modal_ideas_close").on("click" , function()
+    {
+        $("body").removeClass("modal-open");
+    })
 });
 
