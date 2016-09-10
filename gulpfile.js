@@ -31,7 +31,7 @@ gulp.task('js', function () {
 });
 
     gulp.task('js_dev', ['checkJs'], function () {
-        gulp.src(['app/js/jquery.js','app/js/angular.js','app/js/controller.js', 'app/js/*.js'])
+        gulp.src(['app/js/jquery.js','app/js/angular.js','app/js/controller.js','app/js/*.js'])
             .pipe(sourcemaps.init())
             .pipe(concat('main.min.js'))
             .pipe(ngAnnotate())

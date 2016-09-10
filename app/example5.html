@@ -15,10 +15,7 @@
     <meta property="og:image" content="http://apstraction.nl/images/headlogo2.png"/>
 
 
-    <title>Apstraction</title>
-
-
-
+    <title>Angular Projects</title>
 
 
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
@@ -27,7 +24,8 @@
     <link href="images/favicon.png" rel="icon" type="image/png"/>
 </head>
 
-<body ng-style="vm.loadingReady" ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;"  data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body ng-style="vm.loadingReady" ng-app="app" ng-controller="mainCtrl as vm" style="height: 100%;" data-spy="scroll"
+      data-target=".navbar-collapse" data-offset="50">
 
 <div class=" navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-header">
@@ -43,30 +41,57 @@
 
     </div>
     <div class="collapse navbar-collapse" id="menu">
-        <ul class="nav navbar-nav navbar-right" >
+        <ul class="nav navbar-nav navbar-right">
             <li><a>PORTFOLIO</a></li>
-            <li class="active"><a id="example01" href="index.html#openModal_impatient"><img src="images/titleimg_impatient_inactive.png" ></a></li>
-            <li><a id="example02" href="index.html#openModal_tafeltrainer"><img src="images/titleimg_tafeltrainer_inactive.png" ></a></li>
-            <li><a id="example03" href="index.html#openModal_gouda"><img src="images/titleimg_gouda_inactive.png" ></a></li>
-            <li><a id="example04" href="index.html#openModal_group"><img src="images/titleimg_groupmaker_inactive.png" ></a></li>
-            <li><a id="example05" href="#0"><img src="images/titleimg_anim_small.png" ></a></li>
-            <li><a id="example06" href="index.html#openModal_ideas"><img src="images/titleimg_ideas_inactive.png" ></a></li>
-            <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag" ng-src="{{vm.language=='en' && 'images/flag_nl.png'||vm.language=='nl'&& 'images/flag_uk.png'}}" /></a> </li>
+            <li class="active"><a id="example01" href="index.html#openModal_impatient"><img
+                    src="images/titleimg_impatient_inactive.png"></a></li>
+            <li><a id="example02" href="index.html#openModal_tafeltrainer"><img
+                    src="images/titleimg_tafeltrainer_inactive.png"></a></li>
+            <li><a id="example03" href="index.html#openModal_gouda"><img src="images/titleimg_gouda_inactive.png"></a>
+            </li>
+            <li><a id="example04" href="index.html#openModal_group"><img src="images/titleimg_groupmaker_inactive.png"></a>
+            </li>
+            <li><a id="example05" href="#0"><img src="images/titleimg_anim_small.png"></a></li>
+            <li><a id="example06" href="index.html#openModal_ideas"><img src="images/titleimg_ideas_inactive.png"></a>
+            </li>
+            <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag"
+                                                               ng-src="{{vm.language=='en' && 'images/flag_nl.png'||vm.language=='nl'&& 'images/flag_uk.png'}}"/></a>
+            </li>
         </ul>
     </div>
 </div>
 
 
-    <div class="container-fluid portfolioContainer">
-        <div id="example0" class="portfolioExample" >
-            <div id="example4"><h3>Quizler</h3>
-                <p style="padding:20px;"></p>
-                <p    style="padding: 20px;"><img src="images/quizler.png"><p class="carousel-caption img-rounded carousel_text "  id="example5expl">is a web application for taking surveys and quizzes. Based around Bootstrap and Angular JS the final idea is to make a data-centered interface wherein Teachers make tests for their students and stay informed about the results; The students can do their test at leisure and see their own progress. The teacher dashboard and interconnectivity is still work in progress, but the user part gives a small impression.</p></p>
-                <p style="padding:20px;"></p>
-                <a href="http://www.apstraction.nl/quizler/app/index.html" target="_blank">view quizler</a>
+<div class="who_skills_container" style="margin-top: 50px">
+    <div class="container-fluid">
+        <div class="row skillsRow" id="skills">
+            <div class="col-sm-6 skillsNewcolummn">
+                <div class=" skillsInnercolumn homepage" style="height: 400px; position:relative;">
+                    <h2 class="heading">Confabulator</h2>
+                    <img  height="180px" src="images/parrot1.svg" style="position: absolute; left:0px; top:40px;">
+                    <div style="align-self: flex-end">
+                    <p class="rounded_frame ">{{vm.text['example_confabulator']}}</p>
+                    <a href="http://www.apstraction.nl/confabulator/app/index.html" target="_blank">view confabulator</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 skillsNewcolummn">
+                <div class="skillsInnercolumn homepage" style="height: 400px; position:relative;">
+                    <h2 class="heading" >Quizler</h2>
+                    <p class="rounded_frame ">{{vm.text['example_quizler']}}</p>
+                    <a href="http://www.apstraction.nl/quizler/app/index.html" target="_blank">view quizler</a>
+                </div>
             </div>
         </div>
+    </div>
 </div>
+
+
+
+
+
+
+
 
 <div id="get-involved">
     <div class="container-fluid homepage getInvolved">
@@ -88,7 +113,7 @@
           <i class="fa fa-envelope fa-stack-1x"></i>
         </span>
 
-                <p><a href="mailto:apstractionict@gmail.com">Email</a> {{vm.text[moreinfo]}}</p>
+                <p><a href="mailto:apstractionict@gmail.com">Email</a> {{vm.text['moreinfo']}}</p>
 
             </div>
             <div class="col-md-4">

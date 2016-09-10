@@ -6,27 +6,15 @@ body {
   display: none;
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
   height: 100%; }
 
 html {
   height: 100%; }
 
-.who_skills_container {
-  /*background: darkred;*/
-  /*height: calc(100% - 270px);*/ }
-
 ul.nav {
-  font-family: 'Lato', sans-serif; }
-
-ul.nav {
+  font-family: 'Lato', sans-serif;
   font-size: 13px; }
 
 .carousel_text {
@@ -69,23 +57,6 @@ ul.nav {
 #get-involved {
   background-color: #FCFCFC; }
 
-.embed-container {
-  position: relative;
-  padding-bottom: 40%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%; }
-
-.embed-container iframe,
-.embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  margin-left: auto;
-  margin-right: auto; }
-
 #flag {
   width: 20px; }
 
@@ -124,8 +95,6 @@ footer {
 
 .jumbobg {
   position: fixed;
-  /*margin-left: 0px;*/
-  /*margin-right: 0px;*/
   width: 100%;
   height: 200px;
   top: 70px;
@@ -143,16 +112,6 @@ footer {
 .cloud3_style {
   -webkit-transform: translate(-680px, 120px) scale(3);
           transform: translate(-680px, 120px) scale(3); }
-
-.cloud2_style {
-  /*-moz-transform: translate(100px,-80px) scaleY(4.1);*/
-  /*-webkit-transform: translate(100px,-80px) scaleY(4.1);*/
-  /*transform:translate(100px,-80px) scaleX(2.1) scaleY(4.1);*/ }
-
-.cloud1_style {
-  /*-moz-transform: translate(200px,0px) scale(4.0);*/
-  /*-webkit-transform: translate(200px,0px) scale(4.0);*/
-  /*transform:translate(-200px,0px) scale(4.0);*/ }
 
 .navbar-nav > li > a {
   font-family: 'Special Elite', monospace;
@@ -193,8 +152,8 @@ footer {
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
   pointer-events: none; }
 
 .modalDialog:target {
@@ -202,7 +161,7 @@ footer {
   pointer-events: auto; }
 
 .modalDialog > div {
-  width: 85%;
+  width: 95%;
   height: 80%;
   position: relative;
   margin: 10% auto;
@@ -295,42 +254,6 @@ footer {
 .demo-wrapper {
   width: 300px; }
 
-/* Progress bar start */
-progress {
-  color: #c0392b;
-  font-size: .6em;
-  line-height: 1.5em;
-  text-indent: .5em;
-  width: 15em;
-  height: 1.8em;
-  /*border: 1px solid #c0392b;*/
-  background: #fff;
-  border-radius: 9px;
-  border: 0;
-  width: 25%;
-  height: 18px; }
-
-progress::-moz-progress-bar {
-  background: #c0392b;
-  border-radius: 9px; }
-
-progress::-webkit-progress-bar {
-  background: #fff;
-  border-radius: 9px; }
-
-progress::-webkit-progress-value {
-  background: #c0392b;
-  border-radius: 9px; }
-
-.progress-value {
-  padding: 0px 5px;
-  line-height: 20px;
-  margin-left: 5px;
-  font-size: .8em;
-  color: #555;
-  height: 18px; }
-
-/* Progress bar end */
 .secPad {
   padding: 60px 0; }
 
@@ -357,7 +280,6 @@ progress::-webkit-progress-value {
 #bartitle {
   font-size: 1.2em; }
 
-/*xlink:href="#header1_ID_2_"*/
 .bg-parlex {
   padding-top: 0px;
   background-image: url(../images/header2.png);
@@ -373,54 +295,23 @@ progress::-webkit-progress-value {
 .parlexContents {
   padding: 60px 0; }
 
-/*ul>li*/
-/*{*/
-/*text-transform: uppercase;*/
-/*text-align: center;*/
-/*}*/
 .portfolioCont_mainpage {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
   width: 100%;
   overflow: hidden; }
 
 .portfolioContainer {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
   margin-top: 72px;
   width: 100%;
   height: 100%;
   overflow: hidden; }
-
-.portfolioExample {
-  padding: 30px;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  display: block;
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  /*Safari 5.1 to 6.0*/
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9); }
 
 .portfolioRow {
   padding-left: 40px;
@@ -432,13 +323,8 @@ progress::-webkit-progress-value {
 .portfolioContents {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #F5FCFF, #E3E3E3, #D4D7D9);
-  background: radial-gradient(farthest-side at 40% 40%, #F5FCFF, #E3E3E3, #D4D7D9);
+  background: -webkit-radial-gradient(40% 40%, farthest-side, #E6EBED, #E3E3E3, #D4D7D9);
+  background: radial-gradient(farthest-side at 40% 40%, #E6EBED, #E3E3E3, #D4D7D9);
   border-radius: 3px; }
 
 .portfolioContents h3 {
@@ -457,6 +343,22 @@ progress::-webkit-progress-value {
   padding: 0 20px 0 20px; }
 
 .skillsInnercolumn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 40px;
@@ -464,34 +366,27 @@ progress::-webkit-progress-value {
   border-radius: 4px;
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #F5FCFF, #E3E3E3, #D4D7D9);
-  background: radial-gradient(farthest-side at 40% 40%, #F5FCFF, #E3E3E3, #D4D7D9); }
+  background: -webkit-radial-gradient(40% 40%, farthest-side, #E6EBED, #E3E3E3, #D4D7D9);
+  background: radial-gradient(farthest-side at 40% 40%, #E6EBED, #E3E3E3, #D4D7D9); }
+  .skillsInnercolumn p {
+    text-align: left;
+    font-weight: lighter;
+    color: #737373; }
+  .skillsInnercolumn span {
+    color: black; }
 
-.skillsInnercolumn p {
-  text-align: left;
-  font-weight: lighter;
-  color: #737373; }
-
-.skillsInnercolumn span {
-  color: black; }
+.heading {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .skillsRow {
   padding: 40px 15px 40px 15px;
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #FAFAFA, #E8E8E8, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9); }
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9); }
 
 .skillsProgresbar {
   width: 100%;
@@ -518,13 +413,8 @@ progress::-webkit-progress-value {
 .whoContainer {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #FFFFFF, #E3E3E3, #d9d9d9);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-  background: radial-gradient(farthest-side at 20% 40%, #FFFFFF, #E3E3E3, #d9d9d9);
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
   margin-bottom: 0px; }
 
 .whoDiv {
@@ -538,34 +428,16 @@ progress::-webkit-progress-value {
 .wieisapContainer {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
   background: -webkit-radial-gradient(20% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
-  background: radial-gradient(farthest-side at 40% 40%, #E8E8E8, #d9d9d9, #BDBDBD);
+  background: radial-gradient(farthest-side at 20% 40%, #E8E8E8, #d9d9d9, #BDBDBD);
   margin-bottom: 0px; }
 
 .getInvolved {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
-  /* Safari 5.1 to 6.0 */
   background: -webkit-radial-gradient(20% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
-  /* For Opera 11.6 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /*background: radial-gradient(farthest-side at 75% 75%, #FAFAFA,#919B9C  ,#d9d9d9);*/
   background: radial-gradient(farthest-side at 20% 40%, #E8E8E8, #d9d9d9, #BDBDBD); }
 
-/*.container img {*/
-/*width: 60%;*/
-/*height: 60%;*/
-/*float: none;*/
-/*margin-left: 0px;*/
-/*margin-bottom: 15px;*/
-/*}*/
 #introtext {
   width: 100%; }
 
@@ -586,3 +458,26 @@ progress::-webkit-progress-value {
 
 .navbar-right {
   padding-right: 20px; }
+
+.carousel_text {
+  background-color: rgba(50, 50, 50, 0.7);
+  border: 1px solid grey;
+  padding: 5px; }
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: 10px; }
+
+.rounded_frame {
+  position: relative;
+  border-radius: 10px;
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
+  color: black;
+  font-style: bold;
+  border: 1px solid white;
+  opacity: 0.9;
+  padding: 5px 5px 5px 5px;
+  z-index: 2; }

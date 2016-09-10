@@ -28,7 +28,6 @@ $(document).ready(function ()
 
         function cloudPassage()
         {
-            console.log("cloud1Passage...");
             timeLine1.delay(20);
             timeLine1
                 .set(cloud1a, {x: -1400, y: 0},"cloud")
@@ -58,20 +57,17 @@ $(document).ready(function ()
                 timeLine1.pause();
             }
 
-            console.log("animation paused...");
 
             clearTimeout( $.data( this, "scrollCheck" ) );
             $.data( this, "scrollCheck", setTimeout(function()
             {
                 if(timeLinestart.paused())
                 {
-                    console.log("animation start resumed...");
                     timeLinestart.resume();
                 }
 
                 if(timeLine1.paused())
                 {
-                    console.log("animation 1 resumed...");
                     timeLine1.resume();
                 }
             }, 200) );

@@ -4,7 +4,6 @@
 var app = angular.module('app',[]);
     app.controller('mainCtrl', function(textFactory)
 {
-    console.log('mainCtrl working...');
     var vm = this;
     vm.loadingReady={display:"none"};
     vm.text={};
@@ -18,7 +17,6 @@ var app = angular.module('app',[]);
     function changeLanguage()
     {
         vm.language=='en'?vm.language='nl':vm.language='en';
-        //console.log(angular.toJson("changing language to " +vm.language));
         setLanguage(vm.language);
     }
 
@@ -44,7 +42,6 @@ var app = angular.module('app',[]);
                 vm.text[theText[j].key]=theText[j].nl;
             }
         }
-        //console.log(angular.toJson(vm.text));
     }
  vm.loadingReady={display:"initial"};
 
@@ -92,8 +89,8 @@ app.factory('textFactory',function()
             {key:"modal_ideas1",en:"An Android Application that promotes the museum of Modern Art, letting the user play with Broadway Boogie Woogie style elements, making use of Androids animation api. The app is an assignment of an online Mooc. The app needs to be expanded with more ways to make a nice painting, like rotating and enlarging images, or letting it behave like a screensaver.",nl:"Android app die het MOMA museum van moderne kunst propageert. Het laat de gebruiker spelen met Broadway Boogie Woogie achtige elementen, gebruik makend van Androids animatie-api. De app moet uitgebreid worden met meer manieren om een leuk \"schilderij\" te maken, zoals rotatie en schaalverandering van de figuren, zodat het een soort screensaver wordt."},
             {key:"modal_ideas2",en:"The weather is surely in the top 5 of human interests. This app fetches weather data from the OpenWeather api and displays them in a nice way. The idea is to have several 'weathers' displayed in a personalized way. Like for example a mother who wants to know the weather in the home towns of her children.",nl:"In de top 5 human interest bevindt zich zeker het weer. De app haalt weergegevens op van de OpenWeather api en geeft ze weer op een aantrekkelijke wijze. Het idee is om het weer uit verschillende steden gepersonaliseerd weer te geven. Bijvoorbeeld een moeder die het weer in de thuissteden van haar kinderen wil weten, of iemand die veel reist."},
             {key:"modal_ideas3",en:"This app lets people take a daily selfie and stores it on the local system. A logical expansion here is to store the selfies in the cloud, so that the user keeps his collection when he changes his device. On the user side a search function would be necessary and some nice opportunities to edit selfies, add comments and sharing opportunities.",nl:"Deze app nodigt mensen uit een dagelijkse selfie te nemen om op de vaste schijf op te slaan. Een logische uitbreiding hier is om de selfies in de cloud op te slaan, zodat de gebruiker zijn fotos nog heeft wanneer hij van apparaat wisselt. Ook is een zoekfunctie noodzakelijk bij een dergelijk programma, alsmede sociale en artistieke opties."},
-            {key:"",en:"",nl:""},
-            {key:"",en:"",nl:""},
+            {key:"example_quizler",en:"Quizler is a web application for taking  surveys and quizzes. Based around Bootstrap and Angular JS the final idea is to make a data-centered interface wherein Teachers make tests for their students and stay informed about the results; The students can do their test at leisure and see their own progress. The teacher dashboard and interconnectivity is still work in progress, but the user part gives a small impression.",nl:"Quizler is een programma om surveys en quizzen af te nemen. Gebaseerd op Angular en Bootstrap is het de bedoeling om een datagecentreerde applicatie te maken waarin leerkrachten een interface hebben om quizzen te maken, leerlingen en groepen kunnen maken, en de leerlingen een eigen interface hebben waarin ze tests doen en hun eigen resultaten kunnen bekijken."},
+            {key:"example_confabulator",en:"Confabulator is a spelling application that teachers can use to make spelling tests. The program takes in a text which can be modified to contain spelling errors from a certain category, like for example consonant duplication. Teachers can now easily grab a text that is interesting for the students and let them correct it. Tick a modifier on the right side and apply the magic wand in the toolbar.",nl:"Confabulator is een app die leerkrachten gebruiken in het spellingsonderwijs. Willekeurige teksten worden voorzien van specifieke spelfouten, en kunnen door de leerlingen worden gecorrigeerd. In taal-en spellingsonderwijs is het gemis aan aansprekende teksten een groot probleem. Vink een foutsoort aan in het rechtervak en gebruik het toverstafje."},
             {key:"",en:"",nl:""},
             {key:"",en:"",nl:""},
         ];
