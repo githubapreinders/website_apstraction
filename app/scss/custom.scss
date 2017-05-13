@@ -20,7 +20,8 @@ html {
 
 ul.nav {
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 .carousel_text {
@@ -65,9 +66,7 @@ ul.nav {
   color: #c0392b;
 }
 
-#skills {
-  background-color: #FCFCFC;
-}
+
 
 #get-involved {
   background-color: #FCFCFC;
@@ -129,14 +128,7 @@ footer {
   background: linear-gradient(#A0ACB0, #70858C, #799EAB);
 }
 
-.cloud_style {
-  fill: url(#cloud1_gradient);
-  opacity: 0.40;
-}
 
-.cloud3_style {
-  transform: translate(-680px, 120px) scale(3.0);
-}
 
 .navbar-nav > li > a {
   font-family: 'Special Elite', monospace;
@@ -200,7 +192,7 @@ footer {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
+  background-image: url('/images/concrete_seamless.png');
 }
 
 .close {
@@ -348,13 +340,18 @@ footer {
   padding-bottom: 20px;
 }
 
+.heading
+{
+  flex-grow:1;
+}
+
 #bartitle {
   font-size: 1.2em;
 }
 
 .bg-parlex {
   padding-top: 0px;
-  background-image: url(../images/header2.png);
+  background-image: url(../images/header2a.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -371,13 +368,7 @@ footer {
 
 }
 
-.portfolioCont_mainpage {
 
-  background: #d9d9d9; /* For browsers that do not support gradients */
-  background: $white_radial_gradient2;
-  width: 100%;
-  overflow: hidden;
-}
 
 .portfolioContainer {
 
@@ -388,6 +379,47 @@ footer {
   height: 100%;
   overflow: hidden;
 }
+
+.whoContainer {
+  background: #d9d9d9; /* For browsers that do not support gradients */
+  background-image: url('/images/concrete_seamless.png');
+  margin-bottom: 0px;
+}
+
+
+#skills {
+  background-image: url('/images/concrete_seamless.png');
+}
+
+.portfolioCont_mainpage {
+
+  background: #d9d9d9; /* For browsers that do not support gradients */
+  background-image: url('/images/concrete_seamless.png');
+  width: 100%;
+  overflow: hidden;
+}
+
+.wieisapContainer {
+  background: #d9d9d9; /* For browsers that do not support gradients */
+  background-image: url('/images/concrete_seamless.png');
+  margin-bottom: 0px;
+}
+
+.getInvolved {
+  background: #d9d9d9; /* For browsers that do not support gradients */
+  background-image: url('/images/concrete_seamless_grey1.png');
+}
+
+.leftColumn
+{
+  background:url('/images/cheap_diagonal_fabric_mirrored.png');
+}
+
+.rightColumn
+{
+  background:url('/images/cheap_diagonal_fabric.png');
+}
+
 
 //.portfolioExample {
 //    padding: 30px;
@@ -418,8 +450,7 @@ footer {
 
 .portfolioContents {
 
-  background: #d9d9d9; /* For browsers that do not support gradients */
-  background: $white_radial_gradient;
+  
   border-radius: 3px;
 }
 
@@ -438,7 +469,9 @@ footer {
   margin-top: 15px;
 }
 
+
 .skillsNewcolummn {
+
   padding: 0 20px 0 20px;
 }
 
@@ -452,8 +485,8 @@ footer {
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 4px;
-  background: #d9d9d9; /* For browsers that do not support gradients */
-  background: $white_radial_gradient;
+
+  
   p {
     text-align: left;
     font-weight: lighter;
@@ -462,11 +495,6 @@ footer {
   span {
     color: black;
   }
-}
-
-.heading
-{
-  flex-grow:1;
 }
 
 .skillsRow {
@@ -504,11 +532,7 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbaca4', endColorstr='#ff5638', GradientType=0);
 }
 
-.whoContainer {
-  background: #d9d9d9; /* For browsers that do not support gradients */
-  background: $white_radial_gradient2;
-  margin-bottom: 0px;
-}
+
 
 .whoDiv {
   padding: 0 20px 0 20px;
@@ -520,16 +544,9 @@ footer {
   background: snow;
 }
 
-.wieisapContainer {
-  background: #d9d9d9; /* For browsers that do not support gradients */
-  background: $white_radial_gradient3;
-  margin-bottom: 0px;
-}
 
-.getInvolved {
-  background: #d9d9d9; /* For browsers that do not support gradients */
-  background: $white_radial_gradient3;
-}
+
+
 
 #introtext {
   width: 100%;

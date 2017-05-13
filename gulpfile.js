@@ -13,6 +13,7 @@
     sourcemaps = require('gulp-sourcemaps'),
     stylish = require('jshint-stylish'),
     uglify = require('gulp-uglify'),
+    rename = require('gulp-rename')
     useref = require('gulp-useref');
 
 gulp.task('default',function()
@@ -23,7 +24,9 @@ gulp.task('default',function()
 gulp.task('js', function () {
     gulp.src(['app/js/jquery.js','app/js/angular.js','app/js/controller.js', 'app/js/*.js'])
         .pipe(sourcemaps.init())
-        .pipe(concat('main.min.js'))
+        .pipe(concat('concat.js'))
+        .pipe(gulp.dest('build/js'))
+        .pipe(rename('uglify.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
@@ -32,11 +35,9 @@ gulp.task('js', function () {
 
     gulp.task('js_dev', ['checkJs'], function () {
         gulp.src(['app/js/jquery.js','app/js/angular.js','app/js/controller.js','app/js/*.js'])
-            .pipe(sourcemaps.init())
             .pipe(concat('main.min.js'))
             .pipe(ngAnnotate())
             .pipe(uglify())
-            .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest('app/js'))
     })
 
@@ -49,7 +50,7 @@ return gulp.src('app/scss/**/*.scss')
     .pipe(browserSync.stream());
 });
 
-gulp.task('copy_css',['compile_sass'], function()
+gulp.task('copy_css_build',['compile_sass'], function()
 {
  return gulp.src('app/*.html')
      .pipe(useref())
@@ -57,9 +58,17 @@ gulp.task('copy_css',['compile_sass'], function()
      .pipe(gulp.dest('build'))
 });
 
+gulp.task('copy_css_dev',['compile_sass'], function()
+{
+ return gulp.src('app/*.html')
+     .pipe(useref())
+     .pipe(gulpIf('*.css' , cssnano()))
+     .pipe(gulp.dest('app/css'))
+});
 
 
-gulp.task('watch',['browser_Sync', 'compile_sass','js_dev'], function()
+
+gulp.task('watch',['browser_Sync', 'compile_sass','checkJs'], function()
 {
     gulp.watch('app/scss/**/*.scss', ['compile_sass']);
     gulp.watch('app/*.html', browserSync.reload);
@@ -92,6 +101,11 @@ gulp.task('browser_Sync_build', function()
     browserSync.reload;
 });
 
+
+gulp.task('cleanCss', function()
+{
+    return del(['app/css']);
+});
 
 
 gulp.task('clean', function()

@@ -15,7 +15,8 @@ html {
 
 ul.nav {
   font-family: 'Lato', sans-serif;
-  font-size: 13px; }
+  font-size: 11px;
+  text-transform: uppercase; }
 
 .carousel_text {
   background-color: rgba(50, 50, 50, 0.7);
@@ -50,9 +51,6 @@ ul.nav {
   font-family: 'Special Elite', monospace;
   font-size: 1.4em;
   color: #c0392b; }
-
-#skills {
-  background-color: #FCFCFC; }
 
 #get-involved {
   background-color: #FCFCFC; }
@@ -104,14 +102,6 @@ footer {
 .mySvg {
   background: -webkit-linear-gradient(#A0ACB0, #70858C, #799EAB);
   background: linear-gradient(#A0ACB0, #70858C, #799EAB); }
-
-.cloud_style {
-  fill: url(#cloud1_gradient);
-  opacity: 0.40; }
-
-.cloud3_style {
-  -webkit-transform: translate(-680px, 120px) scale(3);
-          transform: translate(-680px, 120px) scale(3); }
 
 .navbar-nav > li > a {
   font-family: 'Special Elite', monospace;
@@ -167,7 +157,7 @@ footer {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff; }
+  background-image: url("/images/concrete_seamless.png"); }
 
 .close {
   background: #606061;
@@ -277,12 +267,18 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+.heading {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
 #bartitle {
   font-size: 1.2em; }
 
 .bg-parlex {
   padding-top: 0px;
-  background-image: url(../images/header2.png);
+  background-image: url(../images/header2a.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -295,14 +291,6 @@ footer {
 .parlexContents {
   padding: 60px 0; }
 
-.portfolioCont_mainpage {
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
-  width: 100%;
-  overflow: hidden; }
-
 .portfolioContainer {
   background: #d9d9d9;
   /* For browsers that do not support gradients */
@@ -313,6 +301,39 @@ footer {
   height: 100%;
   overflow: hidden; }
 
+.whoContainer {
+  background: #d9d9d9;
+  /* For browsers that do not support gradients */
+  background-image: url("/images/concrete_seamless.png");
+  margin-bottom: 0px; }
+
+#skills {
+  background-image: url("/images/concrete_seamless.png"); }
+
+.portfolioCont_mainpage {
+  background: #d9d9d9;
+  /* For browsers that do not support gradients */
+  background-image: url("/images/concrete_seamless.png");
+  width: 100%;
+  overflow: hidden; }
+
+.wieisapContainer {
+  background: #d9d9d9;
+  /* For browsers that do not support gradients */
+  background-image: url("/images/concrete_seamless.png");
+  margin-bottom: 0px; }
+
+.getInvolved {
+  background: #d9d9d9;
+  /* For browsers that do not support gradients */
+  background-image: url("/images/concrete_seamless_grey1.png"); }
+
+.leftColumn {
+  background: url("/images/cheap_diagonal_fabric_mirrored.png"); }
+
+.rightColumn {
+  background: url("/images/cheap_diagonal_fabric.png"); }
+
 .portfolioRow {
   padding-left: 40px;
   padding-right: 40px; }
@@ -321,10 +342,6 @@ footer {
   padding: 0 20px 0 20px; }
 
 .portfolioContents {
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #E6EBED, #E3E3E3, #D4D7D9);
-  background: radial-gradient(farthest-side at 40% 40%, #E6EBED, #E3E3E3, #D4D7D9);
   border-radius: 3px; }
 
 .portfolioContents h3 {
@@ -363,23 +380,13 @@ footer {
   padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 4px;
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(40% 40%, farthest-side, #E6EBED, #E3E3E3, #D4D7D9);
-  background: radial-gradient(farthest-side at 40% 40%, #E6EBED, #E3E3E3, #D4D7D9); }
+  border-radius: 4px; }
   .skillsInnercolumn p {
     text-align: left;
     font-weight: lighter;
     color: #737373; }
   .skillsInnercolumn span {
     color: black; }
-
-.heading {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
 
 .skillsRow {
   padding: 40px 15px 40px 15px;
@@ -410,13 +417,6 @@ footer {
   background: linear-gradient(to bottom, #a1bdc7 0%, #8ea6ad 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbaca4', endColorstr='#ff5638', GradientType=0); }
 
-.whoContainer {
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
-  margin-bottom: 0px; }
-
 .whoDiv {
   padding: 0 20px 0 20px; }
 
@@ -424,19 +424,6 @@ footer {
   border-radius: 2px;
   padding: 20px;
   background: snow; }
-
-.wieisapContainer {
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
-  background: radial-gradient(farthest-side at 20% 40%, #E8E8E8, #d9d9d9, #BDBDBD);
-  margin-bottom: 0px; }
-
-.getInvolved {
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #E8E8E8, #d9d9d9, #BDBDBD);
-  background: radial-gradient(farthest-side at 20% 40%, #E8E8E8, #d9d9d9, #BDBDBD); }
 
 #introtext {
   width: 100%; }
