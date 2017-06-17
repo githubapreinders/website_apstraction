@@ -10,33 +10,22 @@ $(document).ready(function()
     {
         $("body").removeClass("modal-open");
     });
-    $(window).on('load', function()
-    {
-        var ls2 = document.createElement('link');
-        ls2.rel = "stylesheet";
-        ls2.href = "css/bootstrap.min.css";
-        document.getElementsByTagName('head')[0].appendChild(ls2);
-
-        var ls3 = document.createElement('link');
-        ls3.rel = "stylesheet";
-        ls3.href = "fonts/font-awesome/css/font-awesome.min.css";
-        document.getElementsByTagName('head')[0].appendChild(ls3);
-
-        var ls = document.createElement('link');
-        ls.rel = "stylesheet";
-        ls.href = "css/custom.css";
-        document.getElementsByTagName('head')[0].appendChild(ls);
-    });
     
-});    
+});  
+
+
+       
+
 var app = angular.module('app',[]);
     app.controller('mainCtrl', function(textFactory)
 {
+   
     var vm = this;
-    vm.loadingReady={display:"none"};
     vm.language="nl";
     vm.changeLanguage =changeLanguage;
 
+    
+     
     //change language after a click on the upper right flag;
     function changeLanguage()
     {
@@ -50,7 +39,6 @@ var app = angular.module('app',[]);
         var theText = textFactory.getText();
         if(lang=='en')
         {
-                console.log("setting to en");
             for(var i=0; i<theText.length; i++)
             {
                 console.log(theText[i].key);
@@ -60,22 +48,16 @@ var app = angular.module('app',[]);
             }
             document.getElementById('flag').src = 'images/flag_nl.png';
         }
-
         else
         {
-            console.log("setting to nl");
             for(var j=0; j<theText.length; j++)
             {
-                console.log(theText[j].key);
                 if(document.getElementById(theText[j].key)!== null)
                 document.getElementById(theText[j].key).innerHTML = theText[j].nl;
             }
             document.getElementById('flag').src = 'images/flag_uk.png';
         }
     }
-
-    vm.loadingReady = {display:"initial"};
-
 });
 
 //static texts
@@ -91,9 +73,9 @@ app.factory('textFactory',function()
         return [{key:"introduction",en:"introduction", nl:"intro"},
             {key:"vaardigheden",en:"skills", nl:"skills"},
             {key:"contact",en:"contact", nl:"contact"},
-            {key:"introtekst",en:"Application development for Web and Mobile. Front end experience with Java, Java-Scripts, HTML5. Back end experience with Spring-Boot, Node JS and Mongo DB. When given the choice I'd describe myself as a front end developer who is capable of designing, overseeing and building an application. Keywords Problemsolving, Creativity and Perseverance.",nl:"Applicatieontwikkeling voor Web en Mobile. Front end ervaring met Java, Java-Script, HTML5. Backend ervaring met Spring-Boot, Mongo-DB, Node JS. Wanneer ik zou moeten kiezen beschrijf ik mezelf als een front-end ontwikkelaar die in staat is een applicatie als geheel te ontwerpen,te overzien, en te bouwen. Sleutelwoorden zijn Probleemoplossing, Creativiteit en Doorzettingsvermogen."},
+            {key:"introtekst",en:"Application development for Web and Mobile. Front end experience with Java-Script, HTML5, CSS3. Back end experience with Java, Spring-Boot, Node JS and Mongo DB, Version Control(Git), Build Systems(Gulp). When given the choice I'd describe myself as a full-stack developer who is capable of designing, overseeing and building an application. Keywords Problemsolving, Creativity and Perseverance.",nl:"Applicatieontwikkeling voor Web en Mobile. Front end ervaring met Java, Java-Script, HTML5. Backend ervaring met Spring-Boot, Mongo-DB, Node JS. Wanneer ik zou moeten kiezen beschrijf ik mezelf als een full-stack ontwikkelaar die in staat is een applicatie als geheel te ontwerpen,te overzien, en te bouwen. Sleutelwoorden zijn Probleemoplossing, Creativiteit en Doorzettingsvermogen."},
             {key:"backendskills",en:"Software needs to be utterly logical in order to serve her purpose. You have to build something with a strong and flexible skeleton and a good foundation.",nl:"Software moet intens logisch zijn om haar doel te bereiken. Je moet iets bouwen op een goed fundament, met een sterk maar flexibel skelet"},
-            {key:"frontendskill",en:"As a former artist I find user experience important. Something positive must happen between software and a user and I like to be in charge of this.",nl:"Als voormalig beeldend kunstenaar vind ik de gebruikerservaring belangrijk. Er moet iets positiefs plaatsvinden tussen applicatie en gebruiker wat de software een meerwaarde geeft."},
+            {key:"frontendskill",en:"I find user experience important. Something positive must happen between software and a user and I like to be in charge of this.",nl:"Ik vind de gebruikerservaring belangrijk. Er moet iets positiefs plaatsvinden tussen applicatie en gebruiker wat de software een meerwaarde geeft."},
             {key:"quote_lasseter",en:"The art challenges the technology, and the technology inspires the art.",nl:"Kunst daagt de techniek uit, de techniek inspireert de kunst"},
             {key:"wieisapstraction",en:"Who is Apstraction",nl:"Wie is Apstraction"},
             {key:"aboutme",en:"Coming from a background in arts and education I find making software an art and a craft. I have a weakness for old computer games like Discworld, Zelda and Psychonauts. Currently busy with courses on Angular Js and PHP, Developing rewriter tools, and looking for other opportunities to expand my skills. I live in Gouda Netherlands together with a beautiful wife, two cats and a dachshund.",nl:"Vanuit een achtergrond in kunst en educatie vind ik software ontwikkelen een kunst en een ambacht. Heb een zwakte voor oude computergames zoals Discworld, Zelda en Psychonauts. Tegenwoordig bezig met cursussen over Angular Js en PHP, het ontwikkelen van rewriter tools, en aan het uitkijken naar andere mogelijkheden om mijn vaardigheden uit te breiden. Ik woon in Gouda Nederland samen met mijn mooie vrouw, twee katten, en een tekkel."},

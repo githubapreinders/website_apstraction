@@ -1,22 +1,31 @@
 @font-face {
   font-family: "Special Elite";
-  src: url(../fonts/special_elite/SpecialElite.ttf); }
-
-body {
-  display: none;
-  background: #d9d9d9;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
-  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
-  height: 100%; }
+  src: url("../fonts/special_elite/specialelite-webfont.woff") format("woff");
+  src: url("../fonts/special_elite/specialelite-webfont.woff2") format("woff2"); }
 
 html {
   height: 100%; }
 
-ul.nav {
-  font-family: 'Lato', sans-serif;
-  font-size: 11px;
-  text-transform: uppercase; }
+.myskills h1, .myskills h2, .myskills h3, .myskills h4, .myskills h5, .myskills h6 {
+  text-align: center;
+  font-family: 'Special Elite', monospace;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 30px; }
+
+.myskills p {
+  height: 100px;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-style: oblique;
+  color: #3d3d5c; }
+
+.myskills .prowrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%; }
 
 .carousel_text {
   background-color: rgba(50, 50, 50, 0.7);
@@ -36,6 +45,17 @@ ul.nav {
 
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
+
+.parrot {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  height: 180px;
+  z-index: 1500; }
+
+.logoap {
+  height: 40px;
+  width: 41px; }
 
 .text-grey {
   color: grey; }
@@ -73,40 +93,22 @@ footer {
 #back-to-top a {
   color: #FFFFFF; }
 
-.headlogo3 {
-  margin-left: auto; }
-
-.jumbotron {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  background: transparent;
-  color: white;
-  width: 100%;
-  height: 270px;
-  margin-bottom: 0px; }
-
-.jumbobg {
-  position: fixed;
-  width: 100%;
-  height: 200px;
-  top: 70px;
-  left: 0;
-  z-index: -1; }
-
-.mySvg {
-  background: -webkit-linear-gradient(#A0ACB0, #70858C, #799EAB);
-  background: linear-gradient(#A0ACB0, #70858C, #799EAB); }
+body {
+  background: #d9d9d9;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
+  background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);
+  height: 100%; }
 
 .navbar-nav > li > a {
   font-family: 'Special Elite', monospace;
   font-size: 1.2em;
   line-height: 40px; }
+
+ul.nav {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase; }
 
 .navbar-inverse .navbar-nav > li > a {
   color: white; }
@@ -135,10 +137,10 @@ footer {
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
-  top: -50px;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 20px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
@@ -189,8 +191,8 @@ footer {
 
 .homepage {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
 
 .homepage h2 {
   font-family: 'Special Elite', monospace;
@@ -383,8 +385,8 @@ footer {
   border-radius: 4px; }
   .skillsInnercolumn p {
     text-align: left;
-    font-weight: lighter;
-    color: #737373; }
+    font-style: oblique;
+    color: #3d3d5c; }
   .skillsInnercolumn span {
     color: black; }
 
@@ -459,6 +461,7 @@ footer {
 
 .rounded_frame {
   position: relative;
+  text-align: left;
   border-radius: 10px;
   background: -webkit-radial-gradient(20% 40%, farthest-side, #F0F0F0, #E3E3E3, #d9d9d9);
   background: radial-gradient(farthest-side at 20% 40%, #F0F0F0, #E3E3E3, #d9d9d9);

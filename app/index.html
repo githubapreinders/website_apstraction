@@ -18,13 +18,34 @@
 
     <link href="images/favicon.png" rel="icon" type="image/png"/>
 
+
+<style type="text/css">
+.mySvg
+{
+    background: linear-gradient(#A0ACB0, #70858C, #799EAB);
+}
+.headlogo3
+{
+    margin-left: auto;
+}
+ul >li>a
+{
+	text-decoration:none;
+	color:white;
+	padding:20px;
+}
+</style>
+
+
 </head>
 
-<body ng-controller="mainCtrl as vm" ng-style="vm.loadingReady" ng-app="app"  data-spy="scroll"
+<body ng-controller="mainCtrl as vm"  ng-app="app"  data-spy="scroll"
       data-target=".navbar-collapse" data-offset="50">
 
-<div class=" navbar-inverse navbar-fixed-top" role="navigation">
+<div class=" navbar-inverse navbar-fixed-top" role="navigation" style="background: black;display:flex;flex-direction:row;position:fixed;width:100%;top:0px;left:0px;" >
     <div class="navbar-header">
+        <a class="navbar-brand " id="bartitle" href="#home">
+            <img src="images/headlogo_blank.png" style="height:40px;width:41px;"/></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -32,16 +53,16 @@
             <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand " id="bartitle" href="#home">
-            <img src="images/headlogo_blank.png" style="height:40px;width:41px;"/></a>
+        
 
     </div>
+    <div style="flex-grow: 1;"></div>
     <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a id="introduction" href="#home">intro</a></li>
-            <li><a id="vaardigheden" href="#skills">skills</a></li>
-            <li><a id="portfolio_" href="#portfolio">portfolio</a></li>
-            <li><a id="contact" href="#get-involved">contact</a></li>
+        <ul class="nav navbar-nav navbar-right" style="display:inline-flex;" >
+            <li><a id="introduction" href="#home">intro </a></li>
+            <li><a id="vaardigheden" href="#skills">skills </a></li>
+            <li><a id="portfolio_" href="#portfolio">portfolio </a></li>
+            <li><a id="contact" href="#get-involved">contact </a></li>
             <li><a href="" ng-Click="vm.changeLanguage()"><img id="flag"
                                                                src='images/flag_uk.png'/></a>
             </li>
@@ -49,7 +70,7 @@
     </div>
 </div>
 
-<div class="jumbobg">
+<div class="jumbobg" style="position: fixed;  width: 100%;  height: 200px;  top: 70px;  left: 0; z-index:-1;">
     <svg id="mySvg" class="mySvg" width="100%" height="100%" viewBox="0 0 1673.5 446.5" preserveAspectRatio="none">
         <defs>
             <style type="text/css">
@@ -533,33 +554,32 @@
     </svg>
 </div>
 
-<div id="home" class="jumbotron ">
+<div id="home" class="jumbotron " style="display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  -webkit-box-align: end;  -webkit-align-items: flex-end;  -ms-flex-align: end;
+  align-items: flex-end;  background: transparent;  color: white;  width: 100%;  height: 270px;  margin-bottom: 0px; ">
     <img class="headlogo3" src="images/headlogo5.svg" width="150px" height="150px" />
 </div>
 
 <div class="who_skills_container">
-
-    <div id="who" class="container-fluid whoContainer homepage" style="padding-top:10px;padding-bottom:10px;">
+    <div id="who" class="container-fluid whoContainer homepage" >
         <div class="row">
             <h2>Intro</h2>
             <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"><p id="introtekst">
-                Applicatieontwikkeling voor Web en Mobile. Front end ervaring met Java, Java-Script, HTML5. Backend ervaring met Spring-Boot, Mongo-DB, Node JS. Wanneer ik zou moeten kiezen beschrijf ik mezelf als een front-end ontwikkelaar die in staat is een applicatie als geheel te ontwerpen,te overzien, en te bouwen. Sleutelwoorden zijn Probleemoplossing, Creativiteit en Doorzettingsvermogen.</p>
+                Applicatieontwikkeling voor Web en Mobile. Front end ervaring met Java-Script, HTML5. Backend ervaring met Java, Spring-Boot, Mongo-DB, Node JS, Version Control(Git), Build Systems.(Gulp) Wanneer ik zou moeten kiezen beschrijf ik mezelf als een full-stack ontwikkelaar die in staat is een applicatie als geheel te ontwerpen,te overzien, en te bouwen. Sleutelwoorden zijn Probleemoplossing, Creativiteit en Doorzettingsvermogen.</p>
             </div>
         </div>
     </div>
-    <div id="skills" class="container-fluid">
-        <div class="row skillsRow" id="skills">
-            <div class="col-sm-6 skillsNewcolummn">
-                <div class=" skillsInnercolumn homepage ">
-                    <h2>Back End <strong>Skills</strong></h2>
-                    <p id="backendskills">Software moet intens logisch zijn om haar doel te bereiken. Je moet iets bouwen op een goed fundament, met een sterk maar flexibel skelet</p>
 
-                    <br>
-                    <div class="row">
-                        <div class="col-xs-8 col-xs-offset-2">
+   <div id="skills" class="container-fluid">
+        <div class="row">
+        	<div class="col-xs-12 col-sm-6 myskills">   
+        	<h4>back end skills</h4>
 
+ 			<p id="backendskills">Software moet intens logisch zijn om haar doel te bereiken. Je moet iets bouwen op een goed fundament, met een sterk maar flexibel skelet</p>
+
+<div >
+						<div class="prowrapper">
                             <div class="progress">
-                                <div class="progress-bar skillsProgresbar" role="progressbar" style="width:100%">Java
+                                <div class="progress-bar skillsProgresbar" role="progressbar" ">Java
                                 </div>
                             </div>
                             <div class="progress">
@@ -572,24 +592,22 @@
                             <div class="progress" >
                                 <div class="progress-bar skillsProgresbar" role="progressbar">Node JS</div>
                             </div>
-
-                        </div>
-                    </div>
+                         </div>   
                 </div>
-            </div>
-            <div class="col-sm-6 skillsNewcolummn">
-                <div class="skillsInnercolumn homepage ">
-                    <h2>Front End <strong>Skills</strong></h2>
-                    <p id="frontendskill" >Als voormalig beeldend kunstenaar vind ik de gebruikerservaring belangrijk. Er moet iets positiefs plaatsvinden tussen applicatie en gebruiker wat de software een meerwaarde geeft.</p>
 
-                    <br>
-                    <div class="row">
-                        <div class="col-xs-8 col-xs-offset-2">
-                            <div class="progress">
+        	     		</div>
+        	
+
+        	<div class="col-xs-12 col-sm-6 myskills">
+        		<h4>front end skills</h4>
+        		<p id="frontendskill" >Ik vind de gebruikerservaring belangrijk. Er moet iets positiefs plaatsvinden tussen applicatie en gebruiker wat de software een meerwaarde geeft.</p>
+<div >
+                            <div class="prowrapper">
+                            	<div class="progress">
                                 <div class="progress-bar skillsProgresbar2" role="progressbar">Javascript, Angular</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar skillsProgresbar2" role="progressbar" style="width:100%">
+                                <div class="progress-bar skillsProgresbar2" role="progressbar" >
                                     Android Framework
                                 </div>
                             </div>
@@ -599,13 +617,18 @@
                             <div class="progress">
                                 <div class="progress-bar skillsProgresbar2" role="progressbar">Joomla CMS</div>
                             </div>
-                        </div>
-                    </div>
+                            </div>
+
                 </div>
-            </div>
+        	</div>
+
         </div>
-    </div>
 </div>
+
+
+
+
+    
 
 <div id="portfolio" class="container-fluid homepage portfolioCont_mainpage">
     <div class="row ">
@@ -1288,10 +1311,14 @@
     </div>
 </footer>
 
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 
 
-	
-
+	<!--build:css css/minified.css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+	<!-- endbuild -->
 
 <!--build:js js/concat.js-->
 <script src="js/jquery.js"></script>
@@ -1300,6 +1327,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
  <!--endbuild-->
+
+
 
 
 

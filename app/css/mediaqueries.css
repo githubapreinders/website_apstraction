@@ -1,0 +1,27 @@
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .myskills p {
+    width: 90%; }
+  .myskills .prowrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%; }
+  .modalDialog {
+    top: -40px;
+    margin-top: 0px; }
+    .modalDialog > div {
+      width: 95%;
+      height: 94%;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background-image: url("/images/concrete_seamless.png"); }
+  .carousel-control {
+    top: 100%; }
+  .parrot {
+    left: -30px;
+    top: -10px;
+    height: 180px;
+    z-index: 2000; } }

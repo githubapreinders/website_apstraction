@@ -50,7 +50,7 @@ return gulp.src('app/scss/**/*.scss')
     .pipe(browserSync.stream());
 });
 
-gulp.task('copy_css_build',['compile_sass'], function()
+gulp.task('copy_css',['compile_sass'], function()
 {
  return gulp.src('app/*.html')
      .pipe(useref())
@@ -65,7 +65,6 @@ gulp.task('copy_css_dev',['compile_sass'], function()
      .pipe(gulpIf('*.css' , cssnano()))
      .pipe(gulp.dest('app/css'))
 });
-
 
 
 gulp.task('watch',['browser_Sync', 'compile_sass','checkJs'], function()
@@ -102,11 +101,6 @@ gulp.task('browser_Sync_build', function()
 });
 
 
-gulp.task('cleanCss', function()
-{
-    return del(['app/css']);
-});
-
 
 gulp.task('clean', function()
 {
@@ -134,5 +128,5 @@ gulp.task('copy_images', function()
 
     gulp.task('build',function(callback)
     {
-        runSequence('clean',['copy_fonts','copy_images','copy_css','js'],'browser_Sync_build',callback)
+        runSequence('clean',['copy_fonts','copy_css','copy_images','js'],'browser_Sync_build',callback)
     });

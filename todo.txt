@@ -1,0 +1,4 @@
+TODO
+
+Correct menu collapse : on mobile the collapsed menu expands horizontally
+instead of doing that vertically

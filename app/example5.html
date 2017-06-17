@@ -34,7 +34,7 @@
         </button>
 
         <a class="navbar-brand " id="bartitle" href="index.html#home">
-            <img src="images/headlogo_blank.png" style="height:40px;width:41px;"/></a>
+            <img class = "logoap" src="images/headlogo_blank.png" /></a>
 
     </div>
     <div class="collapse navbar-collapse" id="menu">
@@ -63,9 +63,9 @@
     <div class="container-fluid">
         <div class="row skillsRow" id="skills">
             <div class="col-sm-6 skillsNewcolummn">
-                <div class=" skillsInnercolumn homepage" style="height: 400px; position:relative;">
+                <div class="  homepage" >
                     <h2 class="heading">Confabulator</h2>
-                    <img  height="180px" src="images/parrot1.svg" style="position: absolute; left:0px; top:40px;">
+                    <img  class="parrot" src="images/parrot1.svg">
                     <div style="align-self: flex-end">
                     <p class="rounded_frame ">Confabulator is een app die leerkrachten gebruiken in het spellingsonderwijs. Willekeurige teksten worden voorzien van specifieke spelfouten, en kunnen door de leerlingen worden gecorrigeerd. In taal-en spellingsonderwijs is het gemis aan aansprekende teksten een groot probleem. Vink een foutsoort aan in het rechtervak en gebruik het toverstafje.</p>
                     <a href="http://www.apstraction.nl/confabulator/app/index.html" target="_blank">view confabulator</a>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-sm-6 skillsNewcolummn">
-                <div class="skillsInnercolumn homepage" style="height: 400px; position:relative;">
+                <div class=" homepage" >
                     <h2 class="heading" >Quizler</h2>
                     <p class="rounded_frame ">Quizler is een programma om surveys en quizzen af te nemen. Gebaseerd op Angular en Bootstrap is het de bedoeling om een datagecentreerde applicatie te maken waarin leerkrachten een interface hebben om quizzen te maken, leerlingen en groepen kunnen maken, en de leerlingen een eigen interface hebben waarin ze tests doen en hun eigen resultaten kunnen bekijken.</p>
                     <a href="http://www.apstraction.nl/quizler/app/index.html" target="_blank">view quizler</a>
@@ -137,13 +137,14 @@
 </footer>
 
 <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
-    <!--build:css css/styles.min.css-->
+    <!--build:css css/minified.css-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/mediaqueries.css" rel="stylesheet">
     <!--endbuild--> 
 
 
-<!-- build:js uglify.js -->
+<!-- build:js js/concat.js -->
 <script src="js/jquery.js"></script>
 <script src="js/angular.js"></script>
 <script src="js/controller.js"></script>
